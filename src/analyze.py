@@ -3,6 +3,8 @@ import argparse
 
 import pandas as pd
 
+from logging_utils import default_log_path, setup_logging
+
 PRINCIPLES = [
     "empathy",
     "personalization",
@@ -19,7 +21,10 @@ def main():
     parser.add_argument("--pairwise", default="results/judge_pairwise.csv")
     parser.add_argument("--absolute", default="results/judge_absolute.csv")
     parser.add_argument("--out", default="results/summary.md")
+    parser.add_argument("--log-file", default=None, help="Default: logs/<out filename stem>.log")
     args = parser.parse_args()
+
+    logger = setup_logging(args.log_file or default_log_path(args.out))
 
     pairwise = pd.read_csv(args.pairwise)
     absolute = pd.read_csv(args.absolute)
@@ -65,7 +70,8 @@ def main():
     report = "\n".join(lines)
     with open(args.out, "w") as f:
         f.write(report)
-    print(report)
+    logger.info(f"Wrote summary to {args.out}")
+    logger.info("\n" + report)
 
 
 if __name__ == "__main__":

@@ -11,6 +11,8 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+from logging_utils import default_log_path, setup_logging
+
 MODEL_PATHS = {
     "dpo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B",
     # Same weights as meta-llama/Llama-3.1-8B-Instruct (the DPO model's base),
@@ -49,12 +51,17 @@ def main():
     parser.add_argument("--out", required=True)
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--max-new-tokens", type=int, default=512)
+    parser.add_argument(
+        "--log-file", default=None, help="Default: logs/<out filename stem>.log"
+    )
     args = parser.parse_args()
+
+    logger = setup_logging(args.log_file or default_log_path(args.out))
 
     model_path = MODEL_PATHS[args.model]
     df = pd.read_csv(args.questions)
 
-    print(f"Loading tokenizer/model: {model_path}")
+    logger.info(f"Loading tokenizer/model: {model_path}")
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -88,7 +95,7 @@ def main():
         decoded = tokenizer.batch_decode(gen_only, skip_special_tokens=True)
         responses.extend([d.strip() for d in decoded])
         elapsed = time.time() - t0
-        print(
+        logger.info(
             f"[{args.model}] {min(i + args.batch_size, len(prompts))}/{len(prompts)} "
             f"done in {elapsed:.0f}s"
         )
@@ -102,7 +109,7 @@ def main():
         }
     )
     out_df.to_csv(args.out, index=False)
-    print(f"Wrote {len(out_df)} responses to {args.out}")
+    logger.info(f"Wrote {len(out_df)} responses to {args.out}")
 
 
 if __name__ == "__main__":

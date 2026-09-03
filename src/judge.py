@@ -23,6 +23,8 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+from logging_utils import default_log_path, setup_logging
+
 JUDGE_MODEL = "HuggingFaceTB/SmolLM3-3B"
 
 PRINCIPLES = {
@@ -125,7 +127,12 @@ def main():
     parser.add_argument("--pairwise-out", default="results/judge_pairwise.csv")
     parser.add_argument("--absolute-out", default="results/judge_absolute.csv")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--log-file", default=None, help="Default: logs/<pairwise-out filename stem>.log"
+    )
     args = parser.parse_args()
+
+    logger = setup_logging(args.log_file or default_log_path(args.pairwise_out))
 
     random.seed(args.seed)
 
@@ -135,7 +142,7 @@ def main():
         dpo_df, on=["qid", "Question"], suffixes=("_base", "_dpo")
     )
 
-    print(f"Loading judge model: {JUDGE_MODEL}")
+    logger.info(f"Loading judge model: {JUDGE_MODEL}")
     tokenizer, model = load_judge()
 
     principles_desc = "\n".join(f"- {v}" for v in PRINCIPLES.values())
@@ -164,10 +171,10 @@ def main():
                 "winner": winner_model,
             }
         )
-        print(f"[pairwise] {row['qid']}: winner={winner_model} raw={raw!r}")
+        logger.info(f"[pairwise] {row['qid']}: winner={winner_model} raw={raw!r}")
 
     pd.DataFrame(pairwise_rows).to_csv(args.pairwise_out, index=False)
-    print(f"Wrote pairwise judgments to {args.pairwise_out}")
+    logger.info(f"Wrote pairwise judgments to {args.pairwise_out}")
 
     absolute_rows = []
     for model_name, df in (("base", base_df), ("dpo", dpo_df)):
@@ -181,10 +188,10 @@ def main():
             entry = {"qid": row["qid"], "model": model_name, "raw_judgment": raw}
             entry.update(scores if scores else {k: None for k in PRINCIPLES})
             absolute_rows.append(entry)
-            print(f"[absolute] {row['qid']} ({model_name}): scores={scores}")
+            logger.info(f"[absolute] {row['qid']} ({model_name}): scores={scores}")
 
     pd.DataFrame(absolute_rows).to_csv(args.absolute_out, index=False)
-    print(f"Wrote absolute judgments to {args.absolute_out}")
+    logger.info(f"Wrote absolute judgments to {args.absolute_out}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,77 @@
+qid,a_model,b_model,raw_judgment,winner
+q0000,dpo,base,A,dpo
+q0001,base,dpo,B,dpo
+q0002,base,dpo,B,dpo
+q0003,base,dpo,B,dpo
+q0004,dpo,base,A,dpo
+q0005,dpo,base,A,dpo
+q0006,dpo,base,A,dpo
+q0007,base,dpo,B,dpo
+q0008,base,dpo,B,dpo
+q0009,base,dpo,"A
+
+(أشارت الاستج",base
+q0010,base,dpo,B,dpo
+q0011,dpo,base,"A
+
+الاستجابة A هي",dpo
+q0012,base,dpo,B,dpo
+q0013,base,dpo,"A
+
+الاستجابة A هي",base
+q0014,dpo,base,A,dpo
+q0015,dpo,base,A,dpo
+q0016,base,dpo,"A
+
+الاستجابة A ت",base
+q0017,dpo,base,A,dpo
+q0018,dpo,base,A,dpo
+q0019,base,dpo,B,dpo
+q0020,dpo,base,"A
+
+الاستجابة A هي",dpo
+q0021,dpo,base,A,dpo
+q0022,base,dpo,B,dpo
+q0023,base,dpo,B,dpo
+q0024,dpo,base,A,dpo
+q0025,base,dpo,B,dpo
+q0026,base,dpo,B,dpo
+q0027,base,dpo,B,dpo
+q0028,dpo,base,"A
+
+الاستجابة A هي",dpo
+q0029,dpo,base,"A
+
+(أختار الاستج",dpo
+q0030,dpo,base,B,base
+q0031,dpo,base,A,dpo
+q0032,dpo,base,"A
+
+الاستجابة A هي",dpo
+q0033,dpo,base,A,dpo
+q0034,base,dpo,B,dpo
+q0035,dpo,base,B,base
+q0036,dpo,base,A,dpo
+q0037,dpo,base,A,dpo
+q0038,dpo,base,A,dpo
+q0039,dpo,base,A,dpo
+q0040,dpo,base,"A
+
+الاستجابة A هي",dpo
+q0041,base,dpo,"B
+
+الاستجابة B هي",dpo
+q0042,base,dpo,"B
+
+(تم اختيار الاستج",dpo
+q0043,base,dpo,B,dpo
+q0044,base,dpo,"B
+
+(الاستجابة B",dpo
+q0045,base,dpo,B,dpo
+q0046,base,dpo,ني بالعلاج السلوكي,
+q0047,base,dpo,B,dpo
+q0048,dpo,base,"A
+
+(أختار الاستج",dpo
+q0049,base,dpo,B,dpo

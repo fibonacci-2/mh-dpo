@@ -1,0 +1,196 @@
+2026-09-03 18:33:08 [INFO] Logging to logs/judge_shifaa.log
+2026-09-03 18:33:09 [INFO] Loading judge model: HuggingFaceTB/SmolLM3-3B
+2026-09-03 18:33:09 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-03 18:33:09 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-03 18:33:09 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json "HTTP/1.1 200 OK"
+2026-09-03 18:33:09 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-03 18:33:09 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-03 18:33:09 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-03 18:33:09 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-03 18:33:11 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B "HTTP/1.1 200 OK"
+2026-09-03 18:33:11 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-03 18:33:11 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json "HTTP/1.1 200 OK"
+2026-09-03 18:33:28 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-03 18:33:28 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/generation_config.json "HTTP/1.1 200 OK"
+2026-09-03 18:33:31 [INFO] [pairwise] q0000: winner=dpo raw='A'
+2026-09-03 18:33:32 [INFO] [pairwise] q0001: winner=dpo raw='B'
+2026-09-03 18:33:32 [INFO] [pairwise] q0002: winner=dpo raw='B'
+2026-09-03 18:33:33 [INFO] [pairwise] q0003: winner=dpo raw='B'
+2026-09-03 18:33:34 [INFO] [pairwise] q0004: winner=dpo raw='A'
+2026-09-03 18:33:35 [INFO] [pairwise] q0005: winner=dpo raw='A'
+2026-09-03 18:33:35 [INFO] [pairwise] q0006: winner=dpo raw='A'
+2026-09-03 18:33:36 [INFO] [pairwise] q0007: winner=dpo raw='B'
+2026-09-03 18:33:37 [INFO] [pairwise] q0008: winner=dpo raw='B'
+2026-09-03 18:33:38 [INFO] [pairwise] q0009: winner=base raw='A\n\n(أشارت الاستج'
+2026-09-03 18:33:39 [INFO] [pairwise] q0010: winner=dpo raw='B'
+2026-09-03 18:33:40 [INFO] [pairwise] q0011: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-03 18:33:41 [INFO] [pairwise] q0012: winner=dpo raw='B'
+2026-09-03 18:33:43 [INFO] [pairwise] q0013: winner=base raw='A\n\nالاستجابة A هي'
+2026-09-03 18:33:44 [INFO] [pairwise] q0014: winner=dpo raw='A'
+2026-09-03 18:33:44 [INFO] [pairwise] q0015: winner=dpo raw='A'
+2026-09-03 18:33:46 [INFO] [pairwise] q0016: winner=base raw='A\n\nالاستجابة A ت'
+2026-09-03 18:33:46 [INFO] [pairwise] q0017: winner=dpo raw='A'
+2026-09-03 18:33:47 [INFO] [pairwise] q0018: winner=dpo raw='A'
+2026-09-03 18:33:48 [INFO] [pairwise] q0019: winner=dpo raw='B'
+2026-09-03 18:33:49 [INFO] [pairwise] q0020: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-03 18:33:50 [INFO] [pairwise] q0021: winner=dpo raw='A'
+2026-09-03 18:33:51 [INFO] [pairwise] q0022: winner=dpo raw='B'
+2026-09-03 18:33:51 [INFO] [pairwise] q0023: winner=dpo raw='B'
+2026-09-03 18:33:52 [INFO] [pairwise] q0024: winner=dpo raw='A'
+2026-09-03 18:33:53 [INFO] [pairwise] q0025: winner=dpo raw='B'
+2026-09-03 18:33:54 [INFO] [pairwise] q0026: winner=dpo raw='B'
+2026-09-03 18:33:55 [INFO] [pairwise] q0027: winner=dpo raw='B'
+2026-09-03 18:33:56 [INFO] [pairwise] q0028: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-03 18:33:57 [INFO] [pairwise] q0029: winner=dpo raw='A\n\n(أختار الاستج'
+2026-09-03 18:33:58 [INFO] [pairwise] q0030: winner=base raw='B'
+2026-09-03 18:33:59 [INFO] [pairwise] q0031: winner=dpo raw='A'
+2026-09-03 18:34:01 [INFO] [pairwise] q0032: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-03 18:34:01 [INFO] [pairwise] q0033: winner=dpo raw='A'
+2026-09-03 18:34:02 [INFO] [pairwise] q0034: winner=dpo raw='B'
+2026-09-03 18:34:03 [INFO] [pairwise] q0035: winner=base raw='B'
+2026-09-03 18:34:04 [INFO] [pairwise] q0036: winner=dpo raw='A'
+2026-09-03 18:34:05 [INFO] [pairwise] q0037: winner=dpo raw='A'
+2026-09-03 18:34:06 [INFO] [pairwise] q0038: winner=dpo raw='A'
+2026-09-03 18:34:06 [INFO] [pairwise] q0039: winner=dpo raw='A'
+2026-09-03 18:34:08 [INFO] [pairwise] q0040: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-03 18:34:09 [INFO] [pairwise] q0041: winner=dpo raw='B\n\nالاستجابة B هي'
+2026-09-03 18:34:10 [INFO] [pairwise] q0042: winner=dpo raw='B\n\n(تم اختيار الاستج'
+2026-09-03 18:34:11 [INFO] [pairwise] q0043: winner=dpo raw='B'
+2026-09-03 18:34:13 [INFO] [pairwise] q0044: winner=dpo raw='B\n\n(الاستجابة B'
+2026-09-03 18:34:13 [INFO] [pairwise] q0045: winner=dpo raw='B'
+2026-09-03 18:34:15 [INFO] [pairwise] q0046: winner=None raw='ني بالعلاج السلوكي'
+2026-09-03 18:34:16 [INFO] [pairwise] q0047: winner=dpo raw='B'
+2026-09-03 18:34:17 [INFO] [pairwise] q0048: winner=dpo raw='A\n\n(أختار الاستج'
+2026-09-03 18:34:18 [INFO] [pairwise] q0049: winner=dpo raw='B'
+2026-09-03 18:34:18 [INFO] Wrote pairwise judgments to results/judge_pairwise.csv
+2026-09-03 18:34:23 [INFO] [absolute] q0000 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:34:27 [INFO] [absolute] q0001 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:34:34 [INFO] [absolute] q0002 (base): scores={'empathy': 1.0, 'personalization': 1.0, 'self_exploration': 1.0, 'clarity': 1.0, 'autonomy': 1.0, 'harm_avoidance': 1.0, 'stage_sensitivity': 1.0}
+2026-09-03 18:34:38 [INFO] [absolute] q0003 (base): scores={'empathy': 4.0, 'personalization': 2.0, 'self_exploration': 1.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:34:42 [INFO] [absolute] q0004 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:34:46 [INFO] [absolute] q0005 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:34:50 [INFO] [absolute] q0006 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:34:55 [INFO] [absolute] q0007 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:34:59 [INFO] [absolute] q0008 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:03 [INFO] [absolute] q0009 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:07 [INFO] [absolute] q0010 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:12 [INFO] [absolute] q0011 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:35:16 [INFO] [absolute] q0012 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:35:21 [INFO] [absolute] q0013 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:35:25 [INFO] [absolute] q0014 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:29 [INFO] [absolute] q0015 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:33 [INFO] [absolute] q0016 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:37 [INFO] [absolute] q0017 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:45 [INFO] [absolute] q0018 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:35:49 [INFO] [absolute] q0019 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:53 [INFO] [absolute] q0020 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:35:57 [INFO] [absolute] q0021 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:01 [INFO] [absolute] q0022 (base): scores={'empathy': 3.0, 'personalization': 2.0, 'self_exploration': 1.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:36:05 [INFO] [absolute] q0023 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:36:10 [INFO] [absolute] q0024 (base): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:14 [INFO] [absolute] q0025 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:21 [INFO] [absolute] q0026 (base): scores={'empathy': 1.0, 'personalization': 1.0, 'self_exploration': 1.0, 'clarity': 1.0, 'autonomy': 1.0, 'harm_avoidance': 1.0, 'stage_sensitivity': 1.0}
+2026-09-03 18:36:25 [INFO] [absolute] q0027 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:30 [INFO] [absolute] q0028 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:34 [INFO] [absolute] q0029 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:38 [INFO] [absolute] q0030 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:36:43 [INFO] [absolute] q0031 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:47 [INFO] [absolute] q0032 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:51 [INFO] [absolute] q0033 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:36:56 [INFO] [absolute] q0034 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:37:00 [INFO] [absolute] q0035 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:37:04 [INFO] [absolute] q0036 (base): scores={'empathy': 3.0, 'personalization': 2.0, 'self_exploration': 1.0, 'clarity': 4.0, 'autonomy': 3.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:37:08 [INFO] [absolute] q0037 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:37:12 [INFO] [absolute] q0038 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:37:17 [INFO] [absolute] q0039 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:37:21 [INFO] [absolute] q0040 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:37:25 [INFO] [absolute] q0041 (base): scores={'empathy': 4.0, 'personalization': 2.0, 'self_exploration': 1.0, 'clarity': 2.0, 'autonomy': 3.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:37:30 [INFO] [absolute] q0042 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 1.0, 'autonomy': 3.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:37:34 [INFO] [absolute] q0043 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:37:39 [INFO] [absolute] q0044 (base): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-03 18:37:43 [INFO] [absolute] q0045 (base): scores={'empathy': 1.0, 'personalization': 1.0, 'self_exploration': 1.0, 'clarity': 4.0, 'autonomy': 1.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 1.0}
+2026-09-03 18:37:51 [INFO] [absolute] q0046 (base): scores=None
+2026-09-03 18:37:55 [INFO] [absolute] q0047 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:37:59 [INFO] [absolute] q0048 (base): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:38:03 [INFO] [absolute] q0049 (base): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:08 [INFO] [absolute] q0000 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:12 [INFO] [absolute] q0001 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:17 [INFO] [absolute] q0002 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:38:21 [INFO] [absolute] q0003 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:38:25 [INFO] [absolute] q0004 (dpo): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:30 [INFO] [absolute] q0005 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:34 [INFO] [absolute] q0006 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:38 [INFO] [absolute] q0007 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:42 [INFO] [absolute] q0008 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:38:47 [INFO] [absolute] q0009 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:51 [INFO] [absolute] q0010 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:38:55 [INFO] [absolute] q0011 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:00 [INFO] [absolute] q0012 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:04 [INFO] [absolute] q0013 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:09 [INFO] [absolute] q0014 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:39:13 [INFO] [absolute] q0015 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:17 [INFO] [absolute] q0016 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:22 [INFO] [absolute] q0017 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:26 [INFO] [absolute] q0018 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:39:31 [INFO] [absolute] q0019 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:39:35 [INFO] [absolute] q0020 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:39 [INFO] [absolute] q0021 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:43 [INFO] [absolute] q0022 (dpo): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:39:48 [INFO] [absolute] q0023 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:52 [INFO] [absolute] q0024 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:39:56 [INFO] [absolute] q0025 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:01 [INFO] [absolute] q0026 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:05 [INFO] [absolute] q0027 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:09 [INFO] [absolute] q0028 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:14 [INFO] [absolute] q0029 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:19 [INFO] [absolute] q0030 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:40:23 [INFO] [absolute] q0031 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:27 [INFO] [absolute] q0032 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:31 [INFO] [absolute] q0033 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:40:36 [INFO] [absolute] q0034 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:40 [INFO] [absolute] q0035 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:40:44 [INFO] [absolute] q0036 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:49 [INFO] [absolute] q0037 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:53 [INFO] [absolute] q0038 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:40:57 [INFO] [absolute] q0039 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:41:02 [INFO] [absolute] q0040 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:41:06 [INFO] [absolute] q0041 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:41:11 [INFO] [absolute] q0042 (dpo): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:41:15 [INFO] [absolute] q0043 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:41:20 [INFO] [absolute] q0044 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:41:24 [INFO] [absolute] q0045 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:41:32 [INFO] [absolute] q0046 (dpo): scores=None
+2026-09-03 18:41:36 [INFO] [absolute] q0047 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:41:41 [INFO] [absolute] q0048 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-03 18:41:45 [INFO] [absolute] q0049 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-03 18:41:45 [INFO] Wrote absolute judgments to results/judge_absolute.csv
+2026-09-03 18:41:47 [INFO] Logging to logs/judge_shifaa.log
+2026-09-03 18:41:47 [INFO] Wrote summary to results/summary.md
+2026-09-03 18:41:47 [INFO] 
+# RQ1 results: does English DPO transfer to Arabic CBT dialogues?
+
+Pairwise judge comparisons: 49/50 parsed. DPO wins: 44, Base wins: 5, DPO win rate: 89.8%
+
+## Mean Likert scores per principle (1-5, judge-rated)
+
+| model   |   empathy |   personalization |   self_exploration |   clarity |   autonomy |   harm_avoidance |   stage_sensitivity |
+|:--------|----------:|------------------:|-------------------:|----------:|-----------:|-----------------:|--------------------:|
+| base    |      3.94 |              3.49 |               2.82 |      3.98 |       3.82 |             4.35 |                3.71 |
+| dpo     |      4.63 |              4.57 |               4.47 |      4.45 |       4.49 |             4.63 |                4.57 |
+
+## Delta (dpo - base)
+
+|                   |   delta |
+|:------------------|--------:|
+| empathy           |    0.69 |
+| personalization   |    1.08 |
+| self_exploration  |    1.65 |
+| clarity           |    0.47 |
+| autonomy          |    0.67 |
+| harm_avoidance    |    0.28 |
+| stage_sensitivity |    0.86 |
+
+## Judge parse coverage
+
+Absolute scores parsed: {'base': 49, 'dpo': 49} out of {'base': 50, 'dpo': 50} per model
+
