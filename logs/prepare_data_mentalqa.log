@@ -1,0 +1,24 @@
+2026-09-03 19:17:20 [INFO] Logging to logs/prepare_data_mentalqa.log
+2026-09-03 19:17:20 [INFO] Loading dataset=mentalqa from data/mentalqa-train-dev.tsv
+2026-09-03 19:17:20 [INFO] 350 unique mental-health questions available after filtering/dedup
+2026-09-03 19:17:20 [INFO] Wrote 50 sampled questions to data/sampled_questions_mentalqa.csv
+2026-09-03 19:17:20 [INFO] Category breakdown:
+category
+['B']                   13
+['A']                    9
+['A', 'B']               6
+['A', 'E']               4
+['A', 'C', 'D']          3
+['A', 'D']               3
+['A', 'B', 'E']          2
+['A', 'C']               1
+['D']                    1
+['D', 'E']               1
+['A', 'B', 'F']          1
+['A', 'D', 'E', 'Z']     1
+['A', 'B', 'D']          1
+['B', 'D']               1
+['A', 'F']               1
+['A', 'D', 'E']          1
+['E']                    1
+Name: count, dtype: int64

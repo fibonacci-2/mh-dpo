@@ -28,7 +28,7 @@ LOG_FILE=logs/exp_1.log
 : > "$LOG_FILE"  # start a fresh log for this run
 
 echo "== 1/4: sampling questions =="
-python3 src/prepare_data.py --dataset shifaa --n "$N" --seed "$SEED" --output "$QUESTIONS" \
+python3 src/prepare_data.py --dataset mentalqa --n "$N" --seed "$SEED" --output "$QUESTIONS" \
   --log-file "$LOG_FILE"
 
 echo "== 2/4: generating base-model responses =="
