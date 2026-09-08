@@ -14,7 +14,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from logging_utils import default_log_path, setup_logging
 
 MODEL_PATHS = {
-    "dpo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B",
+    "dpo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward",
     # Same weights as meta-llama/Llama-3.1-8B-Instruct (the DPO model's base),
     # mirrored without the gated-access requirement.
     "base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
