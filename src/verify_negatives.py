@@ -4,12 +4,16 @@ Two things only, per the actual QC protocol -- no keyword/length heuristics:
 
   1. LLM-as-judge: a local judge model (Llama-3B-Instruct) is shown the
      client statement plus the chosen (y_w) and rejected (y_l) responses,
-     order randomized, and picks the better one. `judge_prefers_chosen`
-     records whether the judge still preferred the ground-truth response
-     over the generated negative.
+     order randomized, and picks the better one -- `judge_winner` is one of
+     "chosen", "rejected", or "tie".
   2. A random sample of rows (default 100) is written out untouched, with
-     blank columns for a human annotator to fill in by hand -- pure random
-     sampling, nothing derived or pre-filled.
+     a blank `human_label` column for a human annotator to fill in by hand,
+     using the SAME three-way scheme ("chosen"/"rejected"/"tie") -- pure
+     random sampling, nothing derived or pre-filled.
+
+Judge and human deliberately answer the identical question with the
+identical label set, so src/compare_judgments.py can compare them directly
+(exact agreement, kappa) instead of mapping between two different schemes.
 """
 import argparse
 import os
@@ -35,8 +39,10 @@ JUDGE_SYSTEM = (
     "Judge which response better reflects sound CBT practice -- balancing "
     "empathetic validation, Socratic questioning, and realistic cognitive "
     "reframing, without giving unsolicited directive advice or reinforcing "
-    "the client's cognitive distortion. Reply with a single letter, A or B, "
-    "indicating the better response overall. Do not explain."
+    "the client's cognitive distortion. Reply with a single letter: A if "
+    "response A is clearly better overall, B if response B is clearly "
+    "better overall, or T if they are about equally good / you can't tell. "
+    "Do not explain."
 )
 
 
@@ -71,7 +77,7 @@ def ask(tokenizer, model, system, user, max_new_tokens):
 
 
 def parse_winner(raw):
-    match = re.search(r"\b([AB])\b", raw.upper())
+    match = re.search(r"\b([ABT])\b", raw.upper())
     return match.group(1) if match else None
 
 
@@ -84,8 +90,11 @@ def judge_row(tokenizer, model, row):
 
     user = f"Client statement:\n{row['client_statement']}\n\nResponse A:\n{a}\n\nResponse B:\n{b}"
     raw = ask(tokenizer, model, JUDGE_SYSTEM, user, max_new_tokens=8)
-    winner_letter = parse_winner(raw)
-    winner_label = {"A": a_label, "B": b_label}.get(winner_letter)
+    letter = parse_winner(raw)
+    if letter == "T":
+        winner_label = "tie"
+    else:
+        winner_label = {"A": a_label, "B": b_label}.get(letter)
     return raw, winner_label
 
 
@@ -119,7 +128,6 @@ def main():
                 **row.to_dict(),
                 "judge_raw": raw,
                 "judge_winner": winner_label,
-                "judge_prefers_chosen": winner_label == "chosen",
             }
         )
         logger.info(f"[judge] {row['qid']} ({row['component_ablated']}): winner={winner_label}")
@@ -129,8 +137,9 @@ def main():
     judged_df.to_csv(args.out, index=False)
     logger.info(f"Wrote {len(judged_df)} rows with judge verdicts to {args.out}")
 
-    # 2) Random sample for manual human annotation. Pure sampling -- no
-    # heuristics, no derived columns beyond blank fields for the annotator.
+    # 2) Random sample for manual human annotation, using the SAME
+    # "chosen"/"rejected"/"tie" scheme the judge uses -- no heuristics, no
+    # derived columns beyond blank fields for the annotator.
     sample_n = min(args.sample_n, len(df))
     sample_df = df.sample(n=sample_n, random_state=args.seed).copy()
     sample_df["human_label"] = ""
@@ -139,33 +148,45 @@ def main():
     sample_df.to_csv(args.sample_out, index=False)
     logger.info(f"Wrote {len(sample_df)} randomly sampled rows to {args.sample_out} for human annotation")
 
-    # Summary
-    per_component = judged_df.groupby("component_ablated")["judge_prefers_chosen"].agg(["count", "sum"])
-    per_component["judge_agreement_rate"] = per_component["sum"] / per_component["count"]
+    # Summary: judge verdict distribution by component.
+    winner_counts = (
+        judged_df.groupby("component_ablated")["judge_winner"]
+        .value_counts(dropna=False)
+        .unstack(fill_value=0)
+    )
+    for col in ["chosen", "rejected", "tie"]:
+        if col not in winner_counts.columns:
+            winner_counts[col] = 0
+    winner_counts = winner_counts[["chosen", "rejected", "tie"]]
+    winner_rates = winner_counts.div(winner_counts.sum(axis=1), axis=0)
 
     lines = ["# Ex3 negative-generation verification summary\n"]
     lines.append(
         f"Total generated rows: {len(df)}. Judge model: {JUDGE_MODEL}. "
-        f"{sample_n} rows randomly sampled to `{args.sample_out}` for manual human annotation.\n"
+        f"{sample_n} rows randomly sampled to `{args.sample_out}` for manual human annotation "
+        f"using the same chosen/rejected/tie scheme.\n"
     )
     lines.append(
-        "Judge agreement rate = fraction of rows where the judge still preferred the "
-        "ground-truth response (chosen) over the generated negative (rejected) in a "
-        "randomized pairwise comparison.\n"
+        "Judge verdict = which response the judge preferred in a randomized pairwise "
+        "comparison of chosen (y_w) vs. the generated negative (rejected, y_l). A healthy "
+        "ablation should show a high `chosen` rate (the judge still prefers the "
+        "ground truth).\n"
     )
-    lines.append("## Judge agreement rate by component\n")
-    lines.append("| component | n | chosen preferred | agreement rate |")
-    lines.append("|---|---|---|---|")
-    for component, row in per_component.iterrows():
+    lines.append("## Judge verdict distribution by component\n")
+    lines.append("| component | n | chosen | rejected | tie |")
+    lines.append("|---|---|---|---|---|")
+    for component in winner_counts.index:
+        n = int(winner_counts.loc[component].sum())
         lines.append(
-            f"| {component} | {int(row['count'])} | {int(row['sum'])} | {row['judge_agreement_rate']:.0%} |"
+            f"| {component} | {n} | {winner_rates.loc[component, 'chosen']:.0%} | "
+            f"{winner_rates.loc[component, 'rejected']:.0%} | {winner_rates.loc[component, 'tie']:.0%} |"
         )
 
     Path(args.summary).parent.mkdir(parents=True, exist_ok=True)
     with open(args.summary, "w") as f:
         f.write("\n".join(lines))
     logger.info(f"Wrote verification summary to {args.summary}")
-    logger.info(f"Judge agreement rate by component:\n{per_component}")
+    logger.info(f"Judge verdict distribution by component:\n{winner_counts}")
 
 
 if __name__ == "__main__":
