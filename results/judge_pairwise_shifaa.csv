@@ -1,0 +1,73 @@
+qid,a_model,b_model,raw_judgment,winner
+q0000,dpo,base,B,base
+q0001,base,dpo,A,base
+q0002,base,dpo,"A
+
+(الاستجابة A",base
+q0003,base,dpo,A,base
+q0004,dpo,base,B,base
+q0005,dpo,base,B,base
+q0006,dpo,base,B,base
+q0007,base,dpo,A,base
+q0008,base,dpo,A,base
+q0009,base,dpo,A,base
+q0010,base,dpo,"A
+
+(أفضل استجابة",base
+q0011,dpo,base,B,base
+q0012,base,dpo,A,base
+q0013,base,dpo,A,base
+q0014,dpo,base,B,base
+q0015,dpo,base,B,base
+q0016,base,dpo,"A
+
+(أفضل استجابة",base
+q0017,dpo,base,B,base
+q0018,dpo,base,B,base
+q0019,base,dpo,A,base
+q0020,dpo,base,B,base
+q0021,dpo,base,B,base
+q0022,base,dpo,"A
+
+(أفضل استجابة",base
+q0023,base,dpo,B,dpo
+q0024,dpo,base,B,base
+q0025,base,dpo,"A
+
+(الاستجابة A",base
+q0026,base,dpo,A,base
+q0027,base,dpo,A,base
+q0028,dpo,base,B,base
+q0029,dpo,base,B,base
+q0030,dpo,base,B,base
+q0031,dpo,base,B,base
+q0032,dpo,base,B,base
+q0033,dpo,base,B,base
+q0034,base,dpo,"A
+
+(الاستجابة A",base
+q0035,dpo,base,B,base
+q0036,dpo,base,B,base
+q0037,dpo,base,B,base
+q0038,dpo,base,B,base
+q0039,dpo,base,B,base
+q0040,dpo,base,B,base
+q0041,base,dpo,"A
+
+الاستجابة A هي",base
+q0042,base,dpo,A,base
+q0043,base,dpo,A,base
+q0044,base,dpo,A,base
+q0045,base,dpo,"A
+
+(أفضل استجابة",base
+q0046,base,dpo,"A
+
+(أفضل استجابة",base
+q0047,base,dpo,"A
+
+(أنا أختار",base
+q0048,dpo,base,B,base
+q0049,base,dpo,"A
+
+(أفضل استجابة",base

@@ -1,4 +1,5 @@
-"""RQ1: judge the DPO vs base generations with a local LLM-as-judge.
+"""RQ1/RQ2: judge two models' generations against each other with a local
+LLM-as-judge (e.g. dpo vs base for RQ1, modpo vs dpo for RQ2).
 
 Reimplements, as cheaply as possible, the two reference-free evaluation
 protocols from the PsyCoPref paper (https://arxiv.org/abs/2502.19731):
@@ -122,8 +123,10 @@ def parse_scores(raw):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base", default="results/gen_base.csv")
-    parser.add_argument("--dpo", default="results/gen_dpo.csv")
+    parser.add_argument("--a-file", required=True, help="Generations CSV for model A (e.g. results/gen_dpo.csv)")
+    parser.add_argument("--a-name", required=True, help="Name for model A (e.g. dpo)")
+    parser.add_argument("--b-file", required=True, help="Generations CSV for model B (e.g. results/gen_modpo.csv)")
+    parser.add_argument("--b-name", required=True, help="Name for model B (e.g. modpo)")
     parser.add_argument("--pairwise-out", default="results/judge_pairwise.csv")
     parser.add_argument("--absolute-out", default="results/judge_absolute.csv")
     parser.add_argument("--seed", type=int, default=42)
@@ -136,10 +139,10 @@ def main():
 
     random.seed(args.seed)
 
-    base_df = pd.read_csv(args.base)
-    dpo_df = pd.read_csv(args.dpo)
-    merged = base_df.merge(
-        dpo_df, on=["qid", "Question"], suffixes=("_base", "_dpo")
+    a_df = pd.read_csv(args.a_file)
+    b_df = pd.read_csv(args.b_file)
+    merged = a_df.merge(
+        b_df, on=["qid", "Question"], suffixes=(f"_{args.a_name}", f"_{args.b_name}")
     )
 
     logger.info(f"Loading judge model: {JUDGE_MODEL}")
@@ -149,11 +152,11 @@ def main():
 
     pairwise_rows = []
     for _, row in merged.iterrows():
-        base_resp, dpo_resp = row["response_base"], row["response_dpo"]
+        resp_a, resp_b = row[f"response_{args.a_name}"], row[f"response_{args.b_name}"]
         if random.random() < 0.5:
-            a, b, a_model, b_model = base_resp, dpo_resp, "base", "dpo"
+            a, b, a_model, b_model = resp_a, resp_b, args.a_name, args.b_name
         else:
-            a, b, a_model, b_model = dpo_resp, base_resp, "dpo", "base"
+            a, b, a_model, b_model = resp_b, resp_a, args.b_name, args.a_name
 
         user = (
             f"رسالة المستفيد:\n{row['Question']}\n\n"
@@ -177,7 +180,7 @@ def main():
     logger.info(f"Wrote pairwise judgments to {args.pairwise_out}")
 
     absolute_rows = []
-    for model_name, df in (("base", base_df), ("dpo", dpo_df)):
+    for model_name, df in ((args.a_name, a_df), (args.b_name, b_df)):
         for _, row in df.iterrows():
             user = (
                 f"المبادئ:\n{principles_desc}\n\n"

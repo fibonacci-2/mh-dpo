@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>mh-dpo experiment results</title>
+</head>
+<body>
+
+<h1>mh-dpo experiment results</h1>
+<p>Static snapshot from files under <code>results/</code> and <code>logs/</code> as of 2026-09-08.
+Regenerate by hand after re-running an experiment.</p>
+
+<hr>
+
+<details open>
+<summary>Ex1 &mdash; DPO transfer (RQ1)</summary>
+
+<h3>Summary</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr>
+  <th>Run</th><th>DPO model used</th><th>Dataset</th><th>Date</th><th>n</th>
+  <th>DPO win rate</th><th>Base win rate</th><th>Status</th>
+</tr>
+<tr>
+  <td>Run 1</td><td>Psychotherapy-LLM/PsyCoPref-Llama3-8B</td><td>Shifaa</td>
+  <td>2026-09-03</td><td>50 (49 parsed)</td><td>89.8%</td><td>10.2%</td><td>complete</td>
+</tr>
+<tr>
+  <td>Run 1</td><td>Psychotherapy-LLM/PsyCoPref-Llama3-8B</td><td>MentalQA</td>
+  <td>2026-09-03</td><td>50</td><td>72.0%</td><td>28.0%</td><td>complete</td>
+</tr>
+<tr>
+  <td>Run 2</td><td>Psychotherapy-LLM/PsyCoPref-Llama3-8B-<strong>Reward</strong></td><td>Shifaa</td>
+  <td>2026-09-08</td><td>50</td><td>2.0%</td><td>98.0%</td><td>complete</td>
+</tr>
+<tr>
+  <td>Run 2</td><td>Psychotherapy-LLM/PsyCoPref-Llama3-8B-<strong>Reward</strong></td><td>MentalQA</td>
+  <td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td>
+  <td>pending &mdash; only base responses generated so far (<code>results/gen_base_mentalqa.csv</code>)</td>
+</tr>
+</table>
+<p>Base model in both runs: NousResearch/Meta-Llama-3.1-8B-Instruct.</p>
+
+<h3>Run 1 &mdash; Psychotherapy-LLM/PsyCoPref-Llama3-8B</h3>
+
+<h4>Shifaa &mdash; mean judge score per principle (1&ndash;5)</h4>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Principle</th><th>Base</th><th>DPO</th><th>Delta</th></tr>
+<tr><td>Empathy</td><td>3.94</td><td>4.63</td><td>+0.69</td></tr>
+<tr><td>Personalization</td><td>3.49</td><td>4.57</td><td>+1.08</td></tr>
+<tr><td>Self-exploration</td><td>2.82</td><td>4.47</td><td>+1.65</td></tr>
+<tr><td>Clarity</td><td>3.98</td><td>4.45</td><td>+0.47</td></tr>
+<tr><td>Autonomy</td><td>3.82</td><td>4.49</td><td>+0.67</td></tr>
+<tr><td>Harm avoidance</td><td>4.35</td><td>4.63</td><td>+0.28</td></tr>
+<tr><td>Stage sensitivity</td><td>3.71</td><td>4.57</td><td>+0.86</td></tr>
+</table>
+
+<h4>MentalQA &mdash; mean judge score per principle (1&ndash;5)</h4>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Principle</th><th>Base</th><th>DPO</th><th>Delta</th></tr>
+<tr><td>Empathy</td><td>4.46</td><td>4.90</td><td>+0.44</td></tr>
+<tr><td>Personalization</td><td>4.28</td><td>4.86</td><td>+0.58</td></tr>
+<tr><td>Self-exploration</td><td>4.04</td><td>4.88</td><td>+0.84</td></tr>
+<tr><td>Clarity</td><td>4.22</td><td>4.68</td><td>+0.46</td></tr>
+<tr><td>Autonomy</td><td>4.22</td><td>4.66</td><td>+0.44</td></tr>
+<tr><td>Harm avoidance</td><td>4.58</td><td>4.94</td><td>+0.36</td></tr>
+<tr><td>Stage sensitivity</td><td>4.36</td><td>4.86</td><td>+0.50</td></tr>
+</table>
+
+<h3>Run 2 &mdash; Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward</h3>
+<p>This run pointed the "dpo" generator at the <code>-Reward</code> checkpoint instead of the actual
+DPO policy model used in Run 1. Its output is degenerate token spam, not therapy text &mdash; a full
+Shifaa response, unedited:</p>
+<blockquote>autocomplete &#8834;autocomplete sheetautocompletept.slfptautocompletept.slfautocompleteautocompleteptptautocompletebandptglespt134.slfautocomplete ensuredautocompleteautocomplete officersptwavesautocom...</blockquote>
+<p>That almost certainly explains the collapse in scores below &mdash; this looks like a wrong-checkpoint
+artifact, not evidence about DPO transfer itself. Worth confirming whether swapping in the
+<code>-Reward</code> checkpoint was intentional before drawing any conclusion from this row.</p>
+
+<h4>Shifaa &mdash; mean judge score per principle (1&ndash;5)</h4>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Principle</th><th>Base</th><th>DPO (reward ckpt)</th><th>Delta</th></tr>
+<tr><td>Empathy</td><td>4.46</td><td>2.68</td><td>-1.78</td></tr>
+<tr><td>Personalization</td><td>4.22</td><td>1.86</td><td>-2.36</td></tr>
+<tr><td>Self-exploration</td><td>4.04</td><td>2.52</td><td>-1.52</td></tr>
+<tr><td>Clarity</td><td>4.20</td><td>1.58</td><td>-2.62</td></tr>
+<tr><td>Autonomy</td><td>4.16</td><td>2.32</td><td>-1.84</td></tr>
+<tr><td>Harm avoidance</td><td>4.56</td><td>3.10</td><td>-1.46</td></tr>
+<tr><td>Stage sensitivity</td><td>4.34</td><td>2.48</td><td>-1.86</td></tr>
+</table>
+
+<h4>MentalQA</h4>
+<p>Pending &mdash; only base-model responses have been generated so far
+(<code>results/gen_base_mentalqa.csv</code>); the reward-checkpoint generation and judging steps
+haven't been run yet.</p>
+
+</details>
+
+<hr>
+
+<details open>
+<summary>Ex2 &mdash; MODPO training (RQ2)</summary>
+
+<p>Status: rerun in progress. The first attempt (2026-09-08 13:34) never finished &mdash; the training
+loop had no checkpointing, so an interruption lost everything. Fixed (checkpoint every 200 steps,
+auto-resume, gradient checkpointing to fit the batch size) and restarted; see
+<code>logs/exp_2.log</code> for live progress.</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Base model</td><td>NousResearch/Meta-Llama-3.1-8B-Instruct</td></tr>
+<tr><td>Training pairs (PsyCoPref)</td><td>34,329</td></tr>
+<tr><td>Primary (chosen/rejected) weight</td><td>0.50</td></tr>
+<tr><td>Per-principle auxiliary weight</td><td>0.0714 &times; 7 principles</td></tr>
+<tr><td>Learning rate</td><td>5e-6</td></tr>
+<tr><td>Beta</td><td>0.1</td></tr>
+<tr><td>Per-device batch size / grad accum</td><td>4 / 4 (effective 16)</td></tr>
+<tr><td>LoRA r / alpha</td><td>16 / 32</td></tr>
+</table>
+
+</details>
+
+<hr>
+
+<details open>
+<summary>Ex3 &mdash; CBT negative-generation examples</summary>
+
+<p>Sample of generated pairs from <code>results/ex3-negatives/dpo_negatives_cbtbench.csv</code>:
+the client statement, the CBT-Bench reference response (chosen, y_w), and the generated ablated
+negative (rejected, y_l). Two examples per ablation type.</p>
+
+<h3>sq_ablation &mdash; Socratic questions removed, replaced with unsolicited advice</h3>
+
+<p><strong>Client:</strong> [Curious] Is this approach helpful for people like me?</p>
+<p><strong>Chosen (y_w):</strong> Yes, this approach is generally quite helpful for people like you.
+This is a well-researched approach with substantial support for its effectiveness across a broad
+range of clients and problems. Of course, each person is unique and experiences things
+differently. So, we&rsquo;ll tailor what we do to best fit your needs and preferences, and make
+sure that we prioritize checking in to see what seems to be working or not working for you.</p>
+<p><strong>Rejected (y_l):</strong> You seem to be struggling with self-doubt, which is common. I
+would recommend trying to reframe your thinking by focusing on the fact that this approach is
+generally helpful for people in your situation. Let's focus on the positive aspects and build
+upon those. You should try to be more optimistic and trust that this approach will work for
+you.</p>
+
+<p><strong>Client:</strong> [Nervous] The things that you&rsquo;re saying make sense. I can see how
+this way of working would be helpful to other people, but I&rsquo;m not sure it is a good fit for
+me.</p>
+<p><strong>Chosen (y_w):</strong> I appreciate that you&rsquo;re sharing your uncertainty. If
+it&rsquo;s OK with you, I&rsquo;d like to spend some time exploring what, in particular, seems like
+less of a fit. It seems like it would be good for us to lay out or talk about a range of types of
+therapies so you can make a decision about which might be the best fit. I suggest we put that on
+our agenda for our session today. How does that sound?</p>
+<p><strong>Rejected (y_l):</strong> I completely understand your reservations, but I think it's
+really important to remember that this type of therapy has been proven to be effective for many
+people. It's worth a try, and I think you'll find that it will be a good fit for you. I recommend
+we move forward with it and see how it goes. Let's focus on the benefits and not dwell on the
+uncertainty.</p>
+
+<h3>ev_ablation &mdash; empathy stripped, replaced with cold clinical logic</h3>
+
+<p><strong>Client:</strong> [Curious] Is this approach helpful for people like me?</p>
+<p><strong>Chosen (y_w):</strong> Yes, this approach is generally quite helpful for people like you.
+This is a well-researched approach with substantial support for its effectiveness across a broad
+range of clients and problems. Of course, each person is unique and experiences things
+differently. So, we&rsquo;ll tailor what we do to best fit your needs and preferences, and make
+sure that we prioritize checking in to see what seems to be working or not working for you.</p>
+<p><strong>Rejected (y_l):</strong> The statement appears to be based on a common misconception
+about the effectiveness of the approach. However, research indicates that its applicability
+varies widely across different individuals and contexts. We can review the available data to
+determine if there's a plausible connection between this approach and the client's specific
+situation.</p>
+
+<p><strong>Client:</strong> [Nervous] The things that you&rsquo;re saying make sense. I can see how
+this way of working would be helpful to other people, but I&rsquo;m not sure it is a good fit for
+me.</p>
+<p><strong>Chosen (y_w):</strong> I appreciate that you&rsquo;re sharing your uncertainty. If
+it&rsquo;s OK with you, I&rsquo;d like to spend some time exploring what, in particular, seems like
+less of a fit. It seems like it would be good for us to lay out or talk about a range of types of
+therapies so you can make a decision about which might be the best fit. I suggest we put that on
+our agenda for our session today. How does that sound?</p>
+<p><strong>Rejected (y_l):</strong> There appears to be a logical inconsistency in your reasoning.
+You're acknowledging the potential benefits of this approach for others, but rejecting it for
+yourself without providing a clear rationale. Let's break down the key elements of this method
+and examine them in isolation. We'll evaluate the efficacy of each component to determine which
+ones might be causing the mismatch.</p>
+
+<h3>cr_toxic_positivity &mdash; realistic reframe replaced with dismissive cheerfulness</h3>
+
+<p><strong>Client:</strong> [Curious] Is this approach helpful for people like me?</p>
+<p><strong>Chosen (y_w):</strong> Yes, this approach is generally quite helpful for people like you.
+This is a well-researched approach with substantial support for its effectiveness across a broad
+range of clients and problems. Of course, each person is unique and experiences things
+differently. So, we&rsquo;ll tailor what we do to best fit your needs and preferences, and make
+sure that we prioritize checking in to see what seems to be working or not working for you.</p>
+<p><strong>Rejected (y_l):</strong> This approach is a total game-changer for people like you. Just
+think about all the amazing breakthroughs you'll have and the incredible progress you'll make.
+It's totally normal for people to be skeptical at first, but trust me, you'll be amazed at how
+quickly things start to fall into place. We'll work together to customize this approach to fit
+your unique awesomeness, and before you know it, you'll be feeling like a brand new person.</p>
+
+<p><strong>Client:</strong> [Nervous] The things that you&rsquo;re saying make sense. I can see how
+this way of working would be helpful to other people, but I&rsquo;m not sure it is a good fit for
+me.</p>
+<p><strong>Chosen (y_w):</strong> I appreciate that you&rsquo;re sharing your uncertainty. If
+it&rsquo;s OK with you, I&rsquo;d like to spend some time exploring what, in particular, seems like
+less of a fit. It seems like it would be good for us to lay out or talk about a range of types of
+therapies so you can make a decision about which might be the best fit. I suggest we put that on
+our agenda for our session today. How does that sound?</p>
+<p><strong>Rejected (y_l):</strong> I'm so glad you're feeling open to this! You're already
+thinking so positively about it, I just know it's going to be a perfect fit for you. Sometimes our
+intuition is all we need to trust our instincts and go with it. Why don't we just dive right in
+and see how amazing it feels?</p>
+
+<h3>cr_distortion_reinforcement &mdash; challenge replaced with covert validation of the distortion</h3>
+
+<p><strong>Client:</strong> [Curious] Is this approach helpful for people like me?</p>
+<p><strong>Chosen (y_w):</strong> Yes, this approach is generally quite helpful for people like you.
+This is a well-researched approach with substantial support for its effectiveness across a broad
+range of clients and problems. Of course, each person is unique and experiences things
+differently. So, we&rsquo;ll tailor what we do to best fit your needs and preferences, and make
+sure that we prioritize checking in to see what seems to be working or not working for you.</p>
+<p><strong>Rejected (y_l):</strong> Yes, I can totally understand why you'd think that this
+approach might not be helpful for you. It's really common for people to feel skeptical about
+trying something new, especially if they've had negative experiences in the past. In fact, I've
+worked with plenty of clients who initially felt the same way, but ultimately found it to be a
+game-changer for them. So, let's explore what might be holding you back from feeling hopeful
+about this approach, and see if we can work through those concerns together.</p>
+
+<p><strong>Client:</strong> [Nervous] The things that you&rsquo;re saying make sense. I can see how
+this way of working would be helpful to other people, but I&rsquo;m not sure it is a good fit for
+me.</p>
+<p><strong>Chosen (y_w):</strong> I appreciate that you&rsquo;re sharing your uncertainty. If
+it&rsquo;s OK with you, I&rsquo;d like to spend some time exploring what, in particular, seems like
+less of a fit. It seems like it would be good for us to lay out or talk about a range of types of
+therapies so you can make a decision about which might be the best fit. I suggest we put that on
+our agenda for our session today. How does that sound?</p>
+<p><strong>Rejected (y_l):</strong> I completely understand your concerns, and it's really brave of
+you to acknowledge that this approach might not be the right fit for you. It takes a lot of
+courage to admit when something isn't working, and it sounds like you're really listening to your
+inner voice. I think it's great that you're being honest with yourself about what you need, and
+I'm happy to support you in exploring other options that might be a better match for you. Let's
+take some time to talk more about what specifically isn't feeling right for you, and see if we
+can find some alternatives that might work better for you.</p>
+
+</details>
+
+<hr>
+<p>Generated from run_exp_1.sh / run_exp_2.sh / run_exp_3.sh outputs under <code>results/</code>
+and <code>logs/</code>.</p>
+
+</body>
+</html>

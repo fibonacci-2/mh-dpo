@@ -1,8 +1,8 @@
-2026-09-07 23:03:54 [INFO] Logging to logs/exp_1.log
-2026-09-07 23:03:54 [INFO] Loading dataset=mentalqa from data/mentalqa-train-dev.tsv
-2026-09-07 23:03:54 [INFO] 350 unique mental-health questions available after filtering/dedup
-2026-09-07 23:03:54 [INFO] Wrote 50 sampled questions to data/sampled_questions_shifaa.csv
-2026-09-07 23:03:54 [INFO] Category breakdown:
+2026-09-08 11:29:09 [INFO] Logging to logs/exp_1.log
+2026-09-08 11:29:09 [INFO] Loading dataset=mentalqa from data/mentalqa-train-dev.tsv
+2026-09-08 11:29:09 [INFO] 350 unique mental-health questions available after filtering/dedup
+2026-09-08 11:29:09 [INFO] Wrote 50 sampled questions to data/sampled_questions_mentalqa.csv
+2026-09-08 11:29:09 [INFO] Category breakdown:
 category
 ['B']                   13
 ['A']                    9
@@ -22,17 +22,48 @@ category
 ['A', 'D', 'E']          1
 ['E']                    1
 Name: count, dtype: int64
-2026-09-07 23:05:48 [INFO] Logging to logs/exp_1.log
-2026-09-07 23:05:48 [INFO] Loading tokenizer/model: NousResearch/Meta-Llama-3.1-8B-Instruct
-2026-09-07 23:05:48 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-09-07 23:05:48 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-09-07 23:05:48 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json "HTTP/1.1 200 OK"
-2026-09-07 23:05:50 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-09-07 23:05:50 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-09-07 23:05:50 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-09-07 23:05:51 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-09-07 23:05:52 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct "HTTP/1.1 200 OK"
-2026-09-07 23:05:52 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-09-07 23:05:52 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json "HTTP/1.1 200 OK"
-2026-09-07 23:06:40 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-09-07 23:06:40 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/generation_config.json "HTTP/1.1 200 OK"
+2026-09-08 11:29:24 [INFO] Logging to logs/exp_1.log
+2026-09-08 11:29:24 [INFO] Loading tokenizer/model: NousResearch/Meta-Llama-3.1-8B-Instruct
+2026-09-08 11:29:24 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:29:24 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-08 11:29:24 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json "HTTP/1.1 200 OK"
+2026-09-08 11:29:25 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:29:25 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-08 11:29:25 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-08 11:29:25 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-08 11:29:26 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct "HTTP/1.1 200 OK"
+2026-09-08 11:29:26 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:29:26 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json "HTTP/1.1 200 OK"
+2026-09-08 11:29:26 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-08 11:29:26 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:29:26 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json "HTTP/1.1 200 OK"
+2026-09-08 11:29:39 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:29:39 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/generation_config.json "HTTP/1.1 200 OK"
+2026-09-08 11:31:53 [INFO] [base] 8/50 done in 133s
+2026-09-08 11:34:03 [INFO] [base] 16/50 done in 264s
+2026-09-08 11:36:14 [INFO] [base] 24/50 done in 395s
+2026-09-08 11:38:25 [INFO] [base] 32/50 done in 526s
+2026-09-08 11:40:38 [INFO] [base] 40/50 done in 659s
+2026-09-08 11:42:51 [INFO] [base] 48/50 done in 792s
+2026-09-08 11:43:51 [INFO] [base] 50/50 done in 852s
+2026-09-08 11:43:51 [INFO] Wrote 50 responses to results/gen_base_mentalqa.csv
+2026-09-08 11:44:17 [INFO] Logging to logs/exp_1.log
+2026-09-08 11:44:17 [INFO] Loading tokenizer: Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward
+2026-09-08 11:44:17 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:44:17 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-08 11:44:17 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/edab9eae1739cdcec1168db09593afe8943eb3ea/config.json "HTTP/1.1 200 OK"
+2026-09-08 11:44:17 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:44:17 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/edab9eae1739cdcec1168db09593afe8943eb3ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-08 11:44:17 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-08 11:44:17 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-08 11:44:19 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward "HTTP/1.1 200 OK"
+2026-09-08 11:44:19 [INFO] Loading model: Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward
+2026-09-08 11:44:19 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:44:19 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/edab9eae1739cdcec1168db09593afe8943eb3ea/config.json "HTTP/1.1 200 OK"
+2026-09-08 11:44:19 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-08 11:44:19 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:44:19 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/edab9eae1739cdcec1168db09593afe8943eb3ea/config.json "HTTP/1.1 200 OK"
+2026-09-08 11:44:31 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/generation_config.json "HTTP/1.1 404 Not Found"
+2026-09-08 11:44:31 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-08 11:44:31 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward/edab9eae1739cdcec1168db09593afe8943eb3ea/config.json "HTTP/1.1 200 OK"
+2026-09-08 12:36:01 [INFO] [dpo] 8/50 done in 3090s

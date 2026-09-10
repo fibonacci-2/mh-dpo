@@ -1,4 +1,5 @@
-"""RQ1: summarize the judge outputs into a win-rate and per-principle comparison."""
+"""RQ1/RQ2: summarize the judge outputs (any two models) into a win-rate and
+per-principle comparison."""
 import argparse
 
 import pandas as pd
@@ -29,19 +30,24 @@ def main():
     pairwise = pd.read_csv(args.pairwise)
     absolute = pd.read_csv(args.absolute)
 
+    model_names = list(pd.unique(absolute["model"]))
+    if len(model_names) != 2:
+        raise ValueError(f"Expected exactly 2 models in {args.absolute}, found {model_names}")
+    name_a, name_b = model_names
+
     n_total = len(pairwise)
     n_valid = pairwise["winner"].notna().sum()
     win_counts = pairwise["winner"].value_counts()
-    dpo_wins = int(win_counts.get("dpo", 0))
-    base_wins = int(win_counts.get("base", 0))
-    dpo_win_rate = dpo_wins / n_valid * 100 if n_valid else float("nan")
+    a_wins = int(win_counts.get(name_a, 0))
+    b_wins = int(win_counts.get(name_b, 0))
+    b_win_rate = b_wins / n_valid * 100 if n_valid else float("nan")
 
     lines = []
-    lines.append("# RQ1 results: does English DPO transfer to Arabic CBT dialogues?\n")
+    lines.append(f"# Results: {name_b} vs {name_a}\n")
     lines.append(
         f"Pairwise judge comparisons: {n_valid}/{n_total} parsed. "
-        f"DPO wins: {dpo_wins}, Base wins: {base_wins}, "
-        f"DPO win rate: {dpo_win_rate:.1f}%\n"
+        f"{name_b} wins: {b_wins}, {name_a} wins: {a_wins}, "
+        f"{name_b} win rate: {b_win_rate:.1f}%\n"
     )
 
     means = (
@@ -49,16 +55,16 @@ def main():
         .groupby("model")[PRINCIPLES]
         .mean()
         .round(2)
+        .loc[[name_a, name_b]]
     )
     lines.append("## Mean Likert scores per principle (1-5, judge-rated)\n")
     lines.append(means.to_markdown())
     lines.append("")
 
-    if "dpo" in means.index and "base" in means.index:
-        delta = (means.loc["dpo"] - means.loc["base"]).round(2)
-        lines.append("## Delta (dpo - base)\n")
-        lines.append(delta.to_frame("delta").to_markdown())
-        lines.append("")
+    delta = (means.loc[name_b] - means.loc[name_a]).round(2)
+    lines.append(f"## Delta ({name_b} - {name_a})\n")
+    lines.append(delta.to_frame("delta").to_markdown())
+    lines.append("")
 
     n_scored = absolute.dropna(subset=PRINCIPLES, how="all").groupby("model").size()
     lines.append("## Judge parse coverage\n")

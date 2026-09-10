@@ -1,0 +1,1105 @@
+qid,model,raw_judgment,empathy,personalization,self_exploration,clarity,autonomy,harm_avoidance,stage_sensitivity
+q0000,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0001,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,2.0,4.0,4.0,4.0,4.0
+q0002,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0003,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0004,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,3.0,4.0,4.0
+q0005,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0006,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0007,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
+q0008,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0009,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0010,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 3,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,3.0,4.0,4.0,4.0
+q0011,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 5,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,2.0,5.0,4.0,5.0,4.0
+q0012,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
+q0013,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0014,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0015,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
+q0016,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
+q0017,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 3,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,3.0,4.0,4.0,4.0
+q0018,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0019,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0020,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 3,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,3.0,4.0,4.0,4.0,4.0
+q0021,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0022,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
+q0023,base,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```
+
+**شرح النتيجة:**
+
+- **empathy:** 1 (لا يُظهر الرد تعاطفاً حقيقياً مع مشاعر المستفيد. لا يُظهر المعالج أي تعاطف أو فهم للصدمة والقلق",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0024,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,2.0,5.0,5.0,5.0,4.0
+q0025,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,4.0,5.0,5.0,5.0,5.0
+q0026,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 4,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,4.0,5.0,4.0,4.0,5.0,4.0
+q0027,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0028,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 5,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,5.0,4.0,5.0,4.0
+q0029,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0030,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",5.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0031,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0032,base,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0033,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0034,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 5,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,2.0,5.0,4.0,5.0,4.0
+q0035,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,4.0,3.0,4.0,4.0,5.0,4.0
+q0036,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0037,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0038,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0039,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0040,base,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 4,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,1.0,1.0,4.0,2.0,4.0,3.0
+q0041,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0042,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0043,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0044,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0045,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0046,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0047,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0048,base,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0049,base,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,5.0,5.0,5.0,4.0
+q0000,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0001,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 1,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,1.0,2.0,4.0,3.0
+q0002,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,3.0,4.0,4.0
+q0003,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,4.0,4.0,4.0
+q0004,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0005,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0006,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0007,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0008,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0009,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,2.0,3.0,4.0,3.0
+q0010,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,4.0,4.0,4.0
+q0011,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 1,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,1.0,2.0,4.0,3.0
+q0012,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,2.0,3.0,4.0,3.0
+q0013,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0014,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,3.0,2.0,2.0,3.0,4.0,3.0
+q0015,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 1,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 2
+}
+```",3.0,2.0,2.0,1.0,2.0,4.0,2.0
+q0016,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 2,
+  ""self_exploration"": 3,
+  ""clarity"": 1,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,2.0,3.0,1.0,2.0,4.0,3.0
+q0017,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0018,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,3.0,4.0,4.0
+q0019,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,3.0,2.0,2.0,3.0,4.0,3.0
+q0020,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0021,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0022,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 1,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,1.0,2.0,4.0,3.0
+q0023,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,3.0,4.0,4.0
+q0024,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0025,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 2,
+  ""self_exploration"": 3,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,2.0,3.0,2.0,3.0,4.0,3.0
+q0026,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 2,
+  ""self_exploration"": 3,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,2.0,3.0,2.0,3.0,4.0,3.0
+q0027,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0028,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0029,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 2,
+  ""self_exploration"": 3,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,2.0,3.0,2.0,3.0,4.0,3.0
+q0030,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 3,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,3.0,4.0,4.0,4.0
+q0031,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 2,
+  ""self_exploration"": 3,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,2.0,3.0,2.0,3.0,4.0,3.0
+q0032,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,2.0,3.0,4.0,3.0
+q0033,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,3.0,4.0,2.0,4.0,4.0,4.0
+q0034,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0035,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0036,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0037,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0038,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0039,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0040,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0041,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0042,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0043,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
+q0044,dpo,"```json
+{
+  ""empathy"": 2,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 1
+}
+```",2.0,1.0,1.0,1.0,1.0,4.0,1.0
+q0045,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0046,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 2,
+  ""self_exploration"": 3,
+  ""clarity"": 1,
+  ""autonomy"": 2,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,2.0,3.0,1.0,2.0,4.0,3.0
+q0047,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 4,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,4.0,2.0,3.0,4.0,3.0
+q0048,dpo,"```json
+{
+  ""empathy"": 3,
+  ""personalization"": 2,
+  ""self_exploration"": 2,
+  ""clarity"": 2,
+  ""autonomy"": 3,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",3.0,2.0,2.0,2.0,3.0,4.0,3.0
+q0049,dpo,"```json
+{
+  ""empathy"": 1,
+  ""personalization"": 1,
+  ""self_exploration"": 1,
+  ""clarity"": 1,
+  ""autonomy"": 1,
+  ""harm_avoidance"": 1,
+  ""stage_sensitivity"": 1
+}
+```",1.0,1.0,1.0,1.0,1.0,1.0,1.0
