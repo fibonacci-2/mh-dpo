@@ -7,8 +7,9 @@
 #
 # Generation calls the OpenAI API (gpt-4 by default; OPENAI_API_KEY read from
 # .env) -- see src/generate_negatives.py. Verification is a local
-# Llama-3B-Instruct LLM-judge pass plus a random sample written out for
-# manual human annotation -- see src/verify_negatives.py.
+# Llama-3B-Instruct LLM-judge pass (finegrained per-component prompts, see
+# src/llm-as-judge/prompts.md) plus a random sample written out for manual
+# human annotation -- see src/llm-as-judge/verify_negatives.py.
 #
 # Usage: ./run_exp_3.sh
 # Override defaults via env vars, e.g.: MODEL=gpt-4o BATCH_SIZE=32 ./run_exp_3.sh
@@ -47,7 +48,7 @@ LOG_FILE=logs/exp_3.log
 #   --max-new-tokens "$MAX_NEW_TOKENS" --seed "$SEED" --log-file "$LOG_FILE"
 
 echo "== 3/3: LLM-judge verification + human-annotation sample =="
-python3 src/verify_negatives.py --negatives "$NEGATIVES" --out "$VERIFIED" --summary "$SUMMARY" \
+python3 src/llm-as-judge/verify_negatives.py --negatives "$NEGATIVES" --out "$VERIFIED" --summary "$SUMMARY" \
   --sample-out "$SAMPLE" --sample-n "$SAMPLE_N" --seed "$SEED" --log-file "$LOG_FILE"
 
 echo "Done. DPO-ready negatives: $VERIFIED. Human-annotation sample: $SAMPLE. Summary: $SUMMARY. Full log: $LOG_FILE"
