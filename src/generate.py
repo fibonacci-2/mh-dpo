@@ -1,11 +1,13 @@
-"""RQ1/RQ2: generate Arabic CBT-style responses from the DPO model, its base
-variant, or the RQ2 MODPO LoRA adapter.
+"""RQ1/RQ2/ex4: generate Arabic CBT-style responses from the DPO model, its
+base variant, the RQ2 MODPO LoRA adapter, or the ex4 CBT-DP-DPO LoRA adapter.
 
 Run once per model:
     python src/generate.py --model dpo   --questions data/sampled_questions.csv --out results/gen_dpo.csv
     python src/generate.py --model base  --questions data/sampled_questions.csv --out results/gen_base.csv
     python src/generate.py --model modpo --adapter-path models/modpo-llama3.1-8b-lora \\
         --questions data/sampled_questions.csv --out results/gen_modpo.csv
+    python src/generate.py --model cbtdp --adapter-path models/cbtdp-dpo-llama3.1-8b-lora \\
+        --questions data/sampled_questions.csv --out results/gen_cbtdp.csv
 """
 import argparse
 import time
@@ -20,10 +22,14 @@ from logging_utils import default_log_path, setup_logging
 MODEL_PATHS = {
     "dpo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward",
     # Same weights as meta-llama/Llama-3.1-8B-Instruct (the DPO model's base,
-    # and the base MODPO is LoRA-tuned from in src/train_modpo.py), mirrored
-    # without the gated-access requirement.
+    # and the base both MODPO and CBT-DP-DPO are LoRA-tuned from -- see
+    # src/train_modpo.py, src/train_cbtdp_dpo.py), mirrored without the
+    # gated-access requirement.
     "base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
 }
+
+# LoRA-adapter models: same base checkpoint as "base", adapter loaded on top.
+ADAPTER_MODELS = ("modpo", "cbtdp")
 
 SYSTEM_PROMPT = (
     "أنت معالج نفسي متخصص في العلاج السلوكي المعرفي (CBT). "
@@ -51,11 +57,12 @@ def build_prompts(tokenizer, questions):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=list(MODEL_PATHS.keys()) + ["modpo"], required=True)
+    parser.add_argument("--model", choices=list(MODEL_PATHS.keys()) + list(ADAPTER_MODELS), required=True)
     parser.add_argument(
         "--adapter-path",
         default=None,
-        help="Required when --model modpo: path to the LoRA adapter saved by src/train_modpo.py",
+        help="Required when --model modpo/cbtdp: path to the LoRA adapter saved by "
+        "src/train_modpo.py or src/train_cbtdp_dpo.py respectively",
     )
     parser.add_argument("--questions", default="data/sampled_questions.csv")
     parser.add_argument("--out", required=True)
@@ -66,17 +73,18 @@ def main():
     )
     args = parser.parse_args()
 
-    if args.model == "modpo" and not args.adapter_path:
-        parser.error("--adapter-path is required when --model modpo")
+    is_adapter_model = args.model in ADAPTER_MODELS
+    if is_adapter_model and not args.adapter_path:
+        parser.error(f"--adapter-path is required when --model {args.model}")
 
     logger = setup_logging(args.log_file or default_log_path(args.out))
 
-    # modpo is a LoRA adapter on top of the same base checkpoint as "base",
-    # not its own hub id.
-    model_path = MODEL_PATHS["base"] if args.model == "modpo" else MODEL_PATHS[args.model]
+    # modpo/cbtdp are LoRA adapters on top of the same base checkpoint as
+    # "base", not their own hub id.
+    model_path = MODEL_PATHS["base"] if is_adapter_model else MODEL_PATHS[args.model]
     df = pd.read_csv(args.questions)
 
-    tokenizer_path = args.adapter_path if args.model == "modpo" else model_path
+    tokenizer_path = args.adapter_path if is_adapter_model else model_path
     logger.info(f"Loading tokenizer: {tokenizer_path}")
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     if tokenizer.pad_token is None:
@@ -87,8 +95,8 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         model_path, device_map="auto", dtype=torch.bfloat16, low_cpu_mem_usage=True
     )
-    if args.model == "modpo":
-        logger.info(f"Loading MODPO LoRA adapter: {args.adapter_path}")
+    if is_adapter_model:
+        logger.info(f"Loading {args.model.upper()} LoRA adapter: {args.adapter_path}")
         model = PeftModel.from_pretrained(model, args.adapter_path)
     model.eval()
 

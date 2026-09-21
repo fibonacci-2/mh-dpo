@@ -91,3 +91,67 @@ Input:
 - Client Statement: "{client_statement}"
 - Cognitive Distortion Present: "{distortion_label}"
 Generated Negative Response (y_l):
+
+
+# Experiment A: English only, train on English → Test on Arabic
+L_CBT-DP-DPO(θ) = -E_{(x, y_w, y_l, m, k) ~ D_EN} [ w_k(x) * log σ( R_hat_θ(x, y_w, y_l) - Δ_DP(m) ) ]
+(x, y_w, y_l, m, k): metadata tuple:
+x: The client's input statement expressing emotional distress or a cognitive distortion.
+y_w: The chosen (winning) therapist response, demonstrating sound CBT practice.
+y_l: The rejected (losing) therapist response, containing a specific synthetic clinical flaw.
+m: The perturbation failure mode tag used to generate y_l (e.g., direct advice, toxic positivity, distortion reinforcement).
+k: The CBT skill tag ablated in y_l (e.g., Socratic Questioning, Empathetic Validation, Cognitive Reframing).
+
+## w_k(x) — The Skill-Targeted Deficit Weight
+A dynamic weight multiplier applied to the loss of a specific training sample based on the skill k involved.
+w_k = 1.0 + ErrorRate_base(k).
+k in {SQ, EV, CR_T, CR_D} is the skill tag associated with the preference pair.
+ErrorRate_base(k) in [0.0, 1.0] is the empirical failure rate of the baseline model when tested on skill k.
+1.0 is the base multiplier floor ensuring that even perfect skills receive standard gradient weighting.
+Pre-trained LLMs naturally possess higher competence in some skills (e.g., empathetic validation) than others (e.g., asking open Socratic questions). If the base model has a 50% error rate on Socratic inquiry (w_SQ = 1.5), this term scales gradient updates on Socratic samples by 1.5x, forcing the model to focus gradient steps on its weakest clinical areas.
+
+## Delta_DP(m) — The Dynamic Clinical Risk Margin
+Formula: Delta_DP(m) = delta_base + gamma * S(m)
+delta_base = 0.2: The minimum baseline margin for all standard pairs.
+gamma = 0.2: The clinical risk step size.
+S(m) in {0, 1, 2}: Severity level assigned to failure mode m.
+Role: In standard DPO, the loss saturates R_hat > 0. Delta_DP(m) forces the model to achieve an implicit reward gap strictly greater than Delta_DP(m) before the loss stops penalizing the model.
+For a low-risk procedural error (S = 0), Delta = 0.2.
+For a high-risk error like distortion reinforcement (S = 2), Delta = 0.6, forcing the optimizer to heavily suppress probability mass for clinically hazardous outputs.
+
+## Example for calculations
+Prompt Template Used
+Skill Tag (k)
+Failure Mode (m)
+Clinical Severity S(m)
+Margin ΔDP​(m)
+Skill Weight wk​
+SQ Ablation Prompt
+SQ
+Direct_Advice
+0 low
+0.2
+1.5
+EV Ablation Prompt
+EV
+Cold_Logic
+0 low
+0.2
+1
+Toxic Positivity Prompt
+CR
+Toxic_Positivity
+1 Med
+0.4
+1.2
+Distortion Reinforcement Prompt
+CR
+Distortion_Reinforcement
+2 High
+0.6
+1.2
+
+
+## Contribution:
+Evaluation Innovation: Zero-Shot Cross-Lingual Clinical Generalization. evaluate whether learning risk margins in English transfers zero-shot to Arabic without any Arabic fine-tuning.
+The objective function on English (clinical- or CBT-based)
