@@ -93,7 +93,13 @@ Input:
 Generated Negative Response (y_l):
 
 
-# Experiment A: English only, train on English → Test on Arabic
+# Experiment 4 A: Train on English test on English
+We would like to assess in isolation the quality of the new proposed objective function. 
+This ex will be exactly like the next one, which we already ran, but different in two ways:
+* instead of testing on Arabic data, Shifaa and Mental QA, it will test on the test split of the CBT (Abdulrahman created)
+* instead of using the 7 principles from psychopref to judge the function, we will use a new set of 4 principles derived from the four CBT skills we are ablating
+
+# Experiment 4 B: English only, train on English → Test on Arabic
 L_CBT-DP-DPO(θ) = -E_{(x, y_w, y_l, m, k) ~ D_EN} [ w_k(x) * log σ( R_hat_θ(x, y_w, y_l) - Δ_DP(m) ) ]
 (x, y_w, y_l, m, k): metadata tuple:
 x: The client's input statement expressing emotional distress or a cognitive distortion.
