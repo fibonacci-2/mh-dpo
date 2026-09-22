@@ -1,0 +1,272 @@
+qid,client_statement,sq_ablation,ev_ablation,cr_toxic_positivity,cr_distortion_reinforcement
+ex07_7_b_4,"[Panicking] OK, I’m definitely feeling anxious now! Um, what’s the point of this exposure
+again? What if it doesn’t work? What if I can’t stop feeling like this? Maybe we should
+stop now.",,False,,False
+ex05_5_m_3,[Sad] I was feeling hopeless and didn’t want to come in today.,,False,False,False
+ex06_6_b_5,"[Frustrated] I’m still having trouble making appointments. I either completely miss them
+or end up being late. I just can’t get it together.",False,False,False,False
+ex05_5_a_5,"[Angry] I don’t like this or find it helpful. My thoughts aren’t irrational or baseless,
+so I actually find it kind of invalidating and insulting.",False,,,
+ex08_8_b_5,"[Frustrated] I know I said I would go to the event and start a conversation with new
+people, but I only managed to say “hello” to one person.",False,,False,
+ex02_2_a_5,"[Angry] It’s hard to come up with goals because I’m not really sure what we’re doing in
+here.",False,,False,False
+ex07_7_b_2,[Weeping] I’m so embarrassed. I’m an ugly crier.,False,,False,False
+ex09_9_m_2,"[Frustrated] Whelp, the homework was another big swing and miss. Made no sense.
+Can we not do that one again?",False,,False,
+ex07_7_b_1,[Nervous] I don’t think I’m ready to work on this today.,False,,False,False
+ex09_9_a_4,"[Defeated] To be honest, I wouldn’t expect you to ever really get me.",False,False,False,False
+ex02_2_m_1,"[Nervous] I guess I was expecting that we’d just talk about whatever came to my mind on
+a given week.",False,False,False,False
+ex06_6_a_3,"[Frustrated] You don’t understand. I can’t do these things because I’m depressed. If I
+wasn’t depressed, I could easily do these things, and I wouldn’t need to be here in the
+first place.",,False,False,False
+ex02_2_b_2,[Curious] Geez. I don’t even know where to start in picturing my happiness.,False,,False,False
+ex08_8_a_5,"[Hopeless] To be honest, things haven’t improved as much as I expected.",False,,False,False
+ex02_2_m_6,"[Anxious] I want to get a job, find a new partner, lose weight, be happier and less anxious,
+be more outgoing, and work on some my grief issues.",False,,,
+ex03_3_b_1,[Calm] I’m not sure what to talk about today.,False,False,False,False
+ex08_8_m_5,"[Hopeless, after completing a progress monitoring measure] I think the scores on the
+measure you asked me to complete are consistent with my experience so far. It feels like
+things might actually be getting worse.",False,False,,False
+ex07_7_m_4,"[Shaking and weeping] This is not something I can get into without hysterically crying.
+That’s why I avoid it.",False,,False,
+ex10_10_a_2,"[Angry] You seem so concerned with just finishing what’s on your list before time runs out.
+I feel like I’m just a plug-and-play client!",,True,False,False
+ex06_6_b_1,"[Ashamed] I know we talked about me having that date last week. I ended up cancelling
+at the last minute. You know, I actually felt relieved.",,False,False,False
+ex07_7_m_1,"[Angry] I think I’m done with therapy . . . things aren’t that bad, and maybe I don’t want to
+change! I’ve been dealing with this my whole life and I’ve managed.",,,,False
+ex02_2_b_5,"[Nervous] You’re the expert, so I’ll defer to what you think is best.",False,False,False,False
+ex01_1_a_3,"[Angry] My doctor said I have to come see you about my “anger problem.” Sometimes
+when I get really angry, I lose control and hit people. I just get so angry when people say
+stupid things! Are you sure that you will be able to help me with this?",,False,False,False
+ex01_1_m_6,[Impatient] How long will it take for this to work? I don’t have a lot of time or money.,,,,False
+ex03_3_b_2,"[Curious] So, what’s our agenda for today?",False,False,False,False
+ex07_7_a_2,[Very anxious] I feel like I’m going to have a panic attack or faint!,False,False,False,False
+ex05_5_m_2,"[Irritated] When we work through these thought records, it’s not hard to come up with
+alternative evidence and thoughts, but it feels artificial and doesn’t really make me
+feel better.",,False,False,False
+ex04_4_m_6,[Frustrated] I don’t expect this assignment to help.,False,False,False,False
+ex04_4_m_2,"[Anxious] I have a hard time with organization, so I’m worried about doing all of the
+homework correctly",False,,False,False
+ex07_7_b_5,"[Tearing up] I don’t even know if I’m getting any better in here. I mean, I’ve been in therapy
+for weeks and I feel the same.",,False,,False
+ex04_4_b_1,[Pleased] I feel like I’m getting the hang of objective monitoring.,,False,False,
+ex10_10_m_2,"[Sad] I guess I’m feeling hopeless. A part of me wants to change, but another part is afraid
+of who I’ll be if I change too much.",,,False,False
+ex04_4_m_7,[Agitated] I’m too swamped; I don’t think I’ll have the time to do any homework.,,False,False,False
+ex09_9_a_3,"[Angry] You’re the worst. You keep asking me to interpret the situation in different ways,
+like my perspective is always wrong. It’s like you’re calling me a liar. My last therapist would
+not have called me a liar.",,,,False
+ex08_8_a_3,"[Depressed] I wasn’t able to do the trauma homework. I’ve been feeling more depressed
+and sleeping a lot. I’ve been late to work a few days this week.",,False,,False
+ex09_9_b_3,"[Sad, withdrawn] I just don’t know what to say or do anymore . . . to you—or anyone.",,False,False,False
+ex09_9_b_2,"[Withdrawn] I’m not sure where to start, or what to prioritize on today’s agenda. Sorry.",False,False,False,False
+ex05_5_b_5,[Anxious] I don’t really know anyone who will be at this party. I know I’ll be miserable.,False,,False,False
+ex03_3_a_3,"[Irritated] The agenda sounds fine, I suppose. I don’t know. I don’t think this is working,
+so I’m not sure it matters.",False,False,False,False
+ex02_2_a_2,"[Irritated] I can’t commit to coming in here each week. My schedule is unpredictable,
+and I don’t have a car.",False,,False,
+ex09_9_m_4,"[Angry] Now you just seem to be playing a psychologist . . . like the cliché ones on TV.
+But I guess you’re the expert, so tell me what’s next please.",False,False,False,False
+ex06_6_b_2,[Frustrated] I don’t know why I keep blowing up at people. I just do.,False,False,False,False
+ex09_9_m_1,"[Challenging] Are you all here today? No offense, doc, but your mind seems elsewhere.",,False,False,False
+ex03_3_m_2,"[Nervous] I know that the plan was to talk about exposure today, but something’s come up
+that I’d like to talk about first.",False,False,False,False
+ex05_5_a_4,"[Happy] I did what you suggested about my thoughts, and it really helped in the moment.
+Every time I had a negative thought, I just told myself the opposite.",,,False,False
+ex02_2_m_4,[Anxious] I don’t think I want to do any exposure.,False,,False,False
+ex09_9_m_5,"[Irritated] My mother was trying to remind me to “check in” on my thoughts and breathing
+yesterday. So annoying. People are always trying to solve my problems without possibly
+being able to understand what I’m going through.",,,False,False
+ex06_6_m_4,"[Hopeless] Before being diagnosed with multiple sclerosis, I loved hiking. I’m devastated
+because nothing is going to replace that. It’s all over.",False,False,False,
+ex01_1_a_2,"[Helpless] I was abused when I was a child, and recently I can’t stop thinking about it.
+My boyfriend tries to help me be positive, but I can’t stop feeling depressed. Sometimes
+I think it would be easier for everyone if I was dead.",,,False,
+ex04_4_a_4,"[Anxious] Whenever I have trouble motivating to do the homework, I think of how happy
+I will feel telling you that I did it. Your approval means everything to me. I honestly think
+you’re the best therapist I’ve ever met.",False,,False,False
+ex05_5_m_1,"[Impatient] You talk about the importance of thoughts . . . I’m already very aware of my
+negative thoughts.",False,False,False,False
+ex08_8_a_4,"[Excited] I found this article about a breakthrough medication for anxiety, and it seems like
+something I could try.",False,False,False,False
+ex02_2_a_3,"[Irritated] I don’t think this is going to work, so I’m not sure setting goals matters.",False,False,False,False
+ex08_8_m_4,"[Anxious] I’m uneasy about doing the homework, living with my extended family in such
+a small place. It makes me uncomfortable.",False,False,False,False
+ex08_8_m_3,"[Anxious] I guess I haven’t brought up religion in here yet; I’ve been unsure about
+doing that.",False,,False,False
+ex03_3_a_2,"[Sad] I think our sessions have been very helpful. However, my depression is getting worse.
+On my drive to this session today. I pictured myself driving off a bridge. It honestly felt like
+a relief to imagine not having to work so hard to feel better anymore.",,,,False
+ex01_1_m_1,[Confused] I’m not sure I understand how talking about my feelings will help.,False,False,False,False
+ex03_3_b_3,[Nervous] I don’t think I’m ready for working on this today.,,False,False,False
+ex06_6_m_3,"[Sad, failing to make eye contact] I guess I don’t deserve better.",,False,False,False
+ex08_8_a_2,[Frustrated] I don’t think I can commit to coming here every week.,False,False,False,False
+ex05_5_b_4,[Anxious] I know the job interview is going to go poorly; they always do.,,,False,False
+ex02_2_b_3,[Nervous] I just don’t want to feel anxious anymore. I’m tired of it.,False,False,False,False
+ex10_10_m_3,"[Frustrated] I don’t like it when you ask me if I have “catastrophic thoughts.” Aren’t
+catastrophes reserved for wars and natural disasters? So, no, I don’t think I catastrophize.
+Please don’t ask again.",False,,False,False
+ex01_1_a_1,"[Afraid] I’ve had bad experiences in therapy before. My last therapist tried to make me talk
+about and visualize my past traumas. I ended up in the hospital! How can I know that I can
+trust you?",,,False,False
+ex08_8_b_1,[Anxious] I’m not ready to try the next item on my exposure hierarchy.,False,False,False,False
+ex10_10_m_4,"[Angry] I mean, of course, relaxation would be nice, but who can shut off their mind like
+that? I’m not even sure I’d want to . . . I might just end up lazy and complacent! I don’t
+know . . . it’s so frustrating.",,,False,False
+ex01_1_b_1,[Curious] Is this approach helpful for people like me?,False,False,False,False
+ex08_8_b_2,"[Anxious] I don’t think I’m ready to do all of what you’re asking me to do before the
+next session.",,,False,
+ex05_5_b_3,[Sad] I’m a total failure.,,False,False,False
+ex03_3_a_5,"[Curious] I read an article on the internet that a new energy-healing technique can help
+people 10 times faster than CBT and is easy for therapists to learn. I brought a printout of
+the article with instructions. Can we talk about possibly trying that today?",False,False,False,False
+ex06_6_b_4,"[Anxious] I’ve been working hard on keeping my drinking under control, but it’s hard.
+I’m kind of nervous because my friend insists on having his birthday party at the bar
+this weekend.",,,False,
+ex02_2_a_4,"[Angry] You just need goals to write down for the insurance companies so you get paid
+for this.",,,False,
+ex03_3_a_1,"[Irritated] This week has been terrible, and I don’t feel like talking today.",,False,,False
+ex07_7_a_3,"[Disgusted, looking away] Ugh. Ahh. That is disgusting! I am not looking at that or
+touching it!",False,False,,False
+ex02_2_a_1,[Impatient] I think there’s a problem with my brain and I might just need medication.,False,False,False,False
+ex02_2_m_5,"[Agitated] Honestly, my main problem is my partner.",False,False,False,False
+ex07_7_a_7,"[Angry] I don’t think you really care about me! You just pretend to like me because it’s
+your job!",,,,False
+ex03_3_m_5,[Agitated] Wow. You won’t believe what happened this week. It’s a really long story . . .,False,False,False,False
+ex06_6_m_2,"[Ashamed] Umm. After being sober for 6 months, as you know . . . I drank this week. I feel
+like such a failure.",False,False,False,
+ex10_10_b_4,"[Ambivalent] I apologize for missing sessions, but I just wasn’t sure about coming back.
+I’m not convinced I need to change all that much—if anything.",,,False,False
+ex10_10_a_1,"[Withdrawn] Honestly, I don’t know about CBT . . . almost seems a bit condescending.",False,,False,False
+ex10_10_b_2,"[Pessimistic] I know I agreed to this approach, and I understand what we’re trying to do
+here, but I’m starting to doubt it’s a good fit.",False,False,False,False
+ex04_4_b_3,"[Curious] OK, what do we do now that we’ve created an exposure hierarchy?",False,,False,False
+ex08_8_b_3,[Frustrated] I don’t like this breathing stuff. The experience monitoring was more helpful.,False,,False,False
+ex04_4_a_5,"[Dismissive] I didn’t do the homework. It didn’t seem like it was that important, to be
+honest.",False,False,False,False
+ex05_5_a_2,"[Angry] You’re telling me that if my partner died, I should be fine with it?!",,,,
+ex03_3_b_4,[Flustered] Sorry I’m so late. I had the wrong time in my calendar.,False,False,False,False
+ex10_10_b_3,"[Reluctant] I have to admit to not doing the homework. I don’t think I “distort” my
+thoughts any more than the next person, so the assignment seemed a bit, well, silly—
+pardon my bluntness.",False,False,False,False
+ex10_10_b_5,"[Ambivalent] Well, I went to do the homework, but then it occurred to me that I shouldn’t
+try to reduce my worry too much. I mean it’s stressful, but there are times it actually helps
+me stay on top of things . . . to be accountable.",False,,False,False
+ex05_5_b_1,"[Curious] I’m still trying to get the hang of identifying my thoughts. What should I plan for
+next week?",,,False,False
+ex10_10_a_4,"[Defeated] You know, I’ve felt a lot better these past few weeks, and I honestly wonder if
+it’s because I stopped doing those exercises you gave me. I mean, maybe writing down
+my thoughts and trying to relax is making me worse . . . maybe this is just who I am, and
+this is the best that I can feel, and I just need to learn to live with that.",False,False,,
+ex07_7_b_3,"[Nervous, deflecting from exposure task] Oh, I forgot to tell you that I might be switching
+jobs. Maybe we should talk about that instead today?",False,False,False,False
+ex04_4_m_4,[Ashamed] I did some of what we talked about last week but forgot the forms.,False,False,False,False
+ex01_1_m_2,"[Nervous] I have a hard time with organization, so I’m worried about doing all of the
+homework correctly.",,False,,False
+ex07_7_a_6,[Panicking] Oh my god . . . Oh my god . . . I’m dying! I can’t breathe! Help me!,False,,False,False
+ex09_9_b_1,"[Frustrated] Well, I’m not really sure about it, but I guess I’ll give the thought record
+another shot if you think that’s best.",False,,False,False
+ex04_4_b_5,"[Curious, after emotion monitoring homework was assigned at the end of the previous
+session] Where should we start today?",False,False,False,False
+ex03_3_m_1,"[Nervous] You’re the expert, so just tell me what to do today",False,False,False,False
+ex06_6_b_3,"[Discouraged] I’ve still been pretty down, I guess. I spent most of the week in bed.",,False,False,False
+ex05_5_a_6,"[Anxious] I know I sometimes think in extremes, but what if the worst thing actually did
+happen? It could.",,,,False
+ex03_3_b_5,"[Curious] I’m not sure about an agenda. With my other therapist, I just kind of talked about
+whatever was on my mind.",,False,False,False
+ex04_4_b_2,"[Curious] I’m still trying to get the hang of identifying my thoughts. Should I plan for
+anything next week?",,False,False,False
+ex01_1_m_4,"[Nervous] The things that you’re saying make sense. I can see how this way of working
+would be helpful to other people, but I’m not sure it is a good fit for me.",False,,False,False
+ex03_3_a_4,"[Frustrated] To be honest, the last couple of sessions I’ve been confused by our focus on
+my challenges. My family says I should just stay positive, smile more, and not think about
+anything negative. Do we have to discuss my challenges?",,False,False,False
+ex05_5_m_4,"[Annoyed] How will focusing more on these negative thoughts and feelings make me feel
+better rather than just feel worse?",False,,False,False
+ex08_8_b_4,[Excited] You won’t believe what happened this week!,False,False,False,False
+ex06_6_a_4,"[Angry] The exposure you assigned last week was a disaster. I had a panic attack on the
+train, and everyone stared at me. So embarrassing. It’s your fault because you told me
+to do it.",False,False,False,False
+ex06_6_m_1,"[Impatient] Wait a minute . . . you’re saying if I can’t fall asleep, then I need to get out of
+bed and stop trying to sleep?",False,,False,
+ex09_9_a_5,"[Irritated] Well, I guess the homework you’re suggesting makes some sense, but I’m
+also easily irritated lately . . . especially when things are unclear for me and when they’re
+overwhelming.",False,False,False,False
+ex10_10_b_1,"[Anxious] I really want to try testing some of my assumptions about what people think of
+me, but I’m just not sure I’m ready.",False,False,False,False
+ex06_6_a_2,"[Frustrated] You think I should set up some “little rewards” to start feeling less depressed.
+That seems kind of embarrassing and infantilizing.",,,False,False
+ex01_1_m_5,"[Afraid] I’ve had bad experiences in therapy before, and I’m unsure if it’s really helpful. How
+is this going to be different?",,,False,False
+ex01_1_a_4,"[Concerned] I really need to know why I am the way I am now. I think understanding my
+past and childhood is really important, but it sounds like this approach doesn’t get into
+any of that?",,,False,False
+ex04_4_a_3,"[Apprehensive] I successfully did the homework! However, it made me very nervous, so I
+had a few drinks beforehand. This is OK, right? I hope you don’t judge my drinking, like my
+wife and boss do.",,False,False,False
+ex09_9_m_3,"[Frustrated] I just don’t think you’re equipped to help me. The whole “cognitive triad”
+thing, or whatever you called it, seems bogus.",False,False,False,False
+ex01_1_b_4,[Nervous] I’ve never been in therapy before. Do we just talk about my past or upbringing?,False,,False,False
+ex02_2_b_4,[Curious] How long will this take?,True,False,False,False
+ex03_3_m_4,[Dismissive] I’m not sure this is the best use of my time today.,False,,False,False
+ex05_5_a_1,"[Frustrated] My boss’s evaluation of me was devastating. I’m at a loss. There is no other
+perspective on this.",False,False,False,False
+ex09_9_a_1,"[Angry] My partner cheated on me. And, no, there is no alternative explanation, so stop
+asking that! He cheated, so our relationship was a lie!",False,False,,False
+ex01_1_m_3,[Dismissive] I’m not sure this is the right thing for me.,False,False,False,False
+ex09_9_a_2,"[Anxious] I did the measure you asked me to fill out. Honestly, I think I might have rated
+you lower than usual, but I’m not sure I want to talk about it.",,,False,False
+ex07_7_m_3,"[Crying] My partner broke up with me today. I know it’s stupid, but I really thought we
+were going to get married.",,,False,False
+ex01_1_b_3,[Nervous] I’ve never been in therapy before. What do we talk about here?,False,False,False,False
+ex08_8_m_6,"[Anxious] I’ve learned some new things. But I still feel tense all the time. I can’t have a
+conversation with anyone without lashing out. I feel on edge and still can’t really relax.",,False,False,False
+ex05_5_b_2,[Sad] I know I’m a terrible mother.,,False,False,False
+ex08_8_m_1,"[Anxious] I know the plan was to review my monitoring, but I learned yesterday that I might
+lose my job.",False,,False,False
+ex04_4_m_5,[Ashamed] I was only able to do part of what we talked about last week.,,False,False,False
+ex07_7_a_5,"[Angry] You don’t understand. I want to stop feeling sad, not practice feeling sad. I’m
+already pretty freaking great at feeling bad. So, I really don’t need more practice at that!",,False,False,
+ex04_4_m_1,[Anxious] I’m not sure I’m ready to do this on my own.,False,False,False,False
+ex10_10_a_3,"[Angry] Honestly, I just don’t see how you can help me. I mean, sure, if I had your life
+maybe I could sit around and relax at the end of everyday too, but I don’t! In my life, I don’t
+get to relax. So, I just don’t see how you’re going to be able to fix that for me.",,False,,False
+ex04_4_a_2,[Weeping] I just don’t think I can do this homework on my own.,False,False,False,
+ex04_4_b_4,[Nervous] What do we do next with this exposure thing?,False,False,False,False
+ex06_6_a_1,"[Panicking] After touching all of the bathroom walls with millions of germs—I am going to
+wash my hands immediately! I get the point of exposure, but it’s crazy not to wash your
+hands after what we just did.",False,False,False,False
+ex02_2_m_3,[Weeping] I just can’t imagine anything changing. I feel so hopeless.,False,False,False,
+ex04_4_a_1,"[Frustrated] I’m just not getting it. I don’t understand what you’re asking me to do for the
+homework.",False,False,False,False
+ex10_10_m_5,"[Relieved] I’m glad you could see my reluctance about cognitive behavioral therapy! I think
+it started to feel more like a class than a treatment, which was unhelpful. I do want to work
+on feeling better—and thinking better [laughs]—but sometimes I don’t have a clear agenda
+or direction. In those times, just taking some space to talk freely helps me a lot.",,,False,False
+ex09_9_b_4,"[Exasperated] I feel like you’ve been hearing me wrong since we started. You don’t seem
+to understand what I mean. Are you even listening?",False,False,False,False
+ex03_3_m_3,[Nervous] My partner wants us to talk about something today.,False,False,False,False
+ex10_10_m_1,"[Assertive] I do feel bad for missing sessions. I need to be in therapy. I need to get this
+stress under control. I just don’t think we’ve attacked it the right way.",False,False,False,False
+ex01_1_b_2,[Curious] How does therapy work?,False,,False,False
+ex04_4_m_3,"[Flustered] I actually need to be out the door right now. Is there anything that I should do
+before our next session?",True,False,False,False
+ex09_9_b_5,"[Surprised] That was a really abrupt ending last session. I know we only have an hour,
+but I was kind of in the middle of something. That’s been on my mind ever since. I even
+considered not coming today . . . I guess I’ve been a little pissed off about it.",True,,False,False
+ex07_7_a_1,[Angry] What we’re doing in here is so stupid!,True,False,False,False
+ex07_7_m_2,"[Shaking and teary] I’m really embarrassed . . . I kind of lied to you about what I thought
+I could handle in here. I didn’t want to disappoint you or make you feel like this is a waste
+of time.",False,,False,False
+ex08_8_m_2,"[Agitated] I’d go into what happened back then, but I know that we focus on the present
+in this therapy.",False,,False,False
+ex06_6_m_5,[Frustrated] I cut myself this week. I don’t know why I harm myself like I do.,False,False,False,False
+ex05_5_a_3,"[Frustrated] Why do you just keep asking questions, over and over again? It’s really
+frustrating not to get anything more direct from you.",False,False,False,False
+ex08_8_a_1,"[Matter of fact] I think my problems partly stem from the racism and disrespect that
+I experience at work.",False,False,False,False
+ex10_10_a_5,"[Angry] Actually, no, I don’t want to set an agenda. I don’t think that I want to keep doing
+this stuff. I just don’t see the point!",False,False,False,

@@ -1,0 +1,354 @@
+2026-09-21 14:54:27 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 14:54:27 [INFO] Skill weights w_k: {'SQ': 1.041, 'EV': 1.011, 'CR': 1.0}
+2026-09-21 14:54:27 [INFO] Margin formula: Delta_DP(m) = 0.2 + 0.2 * S(m)
+2026-09-21 14:54:27 [INFO] Loaded 624 rows from results/ex3-negatives/dpo_negatives_cbtbench_verified.csv
+2026-09-21 14:54:27 [INFO] Kept 557/624 rows with judge_valid == True
+2026-09-21 14:54:27 [INFO] Wrote 557 CBT-DP-DPO training rows to data/cbtdp_dpo_train-dynamic.csv
+2026-09-21 14:54:27 [INFO] Rows per skill:
+skill
+CR    248
+EV    156
+SQ    153
+Name: count, dtype: int64
+2026-09-21 14:54:27 [INFO] Rows per failure_mode (margin):
+                          first  count
+failure_mode                          
+Cold_Logic                  0.2    156
+Direct_Advice               0.2    153
+Distortion_Reinforcement    0.6    122
+Toxic_Positivity            0.4    126
+2026-09-21 14:55:51 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 14:55:51 [INFO] Loading training data from data/cbtdp_dpo_train-dynamic.csv
+2026-09-21 14:55:51 [INFO] 557 preference pairs loaded
+2026-09-21 14:55:52 [INFO] margin range: [0.20, 0.60], weight range: [1.00, 1.04]
+2026-09-21 14:55:52 [INFO] Loading base model: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 14:55:52 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:55:52 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:55:52 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:55:52 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 14:55:52 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/tokenizer_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22da158afa2a2cbf554f6b621824bf4e64433fcb6b%22 "HTTP/1.1 200 OK"
+2026-09-21 14:55:52 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 14:55:52 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 14:55:54 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B "HTTP/1.1 200 OK"
+2026-09-21 14:55:54 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:55:54 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:55:54 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:55:54 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:56:45 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:56:45 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/generation_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22aba45c8e2bd7d66ff3a5e250c9e9233e137a752c%22 "HTTP/1.1 200 OK"
+2026-09-21 14:56:49 [WARNING] [RANK 0] Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2026-09-21 14:56:52 [INFO] Starting CBT-DP-DPO training
+2026-09-21 14:56:53 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/trl/other "HTTP/1.1 200 OK"
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:01:59 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:04 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:09 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:13 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:18 [INFO] [RANK 0] The used dataset had no length, returning gathered tensors. You should drop the remainder yourself.
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:20 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:21 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:21 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:21 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:21 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:22 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:22 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:22 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:22 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:23 [INFO] Saved LoRA adapter to models/cbtdp-dpo-llama3.1-8b-lora-dynamic
+2026-09-21 15:02:29 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 15:02:29 [INFO] Loading dataset=shifaa from data/shifaa-train.csv
+2026-09-21 15:02:29 [INFO] 2096 unique mental-health questions available after filtering/dedup
+2026-09-21 15:02:29 [INFO] Wrote 50 sampled questions to data/sampled_questions_shifaa.csv
+2026-09-21 15:02:29 [INFO] Category breakdown:
+category
+الأدوية والمستحضرات - أدوية نفسية وعصبية - أدوية القلق              34
+الأدوية والمستحضرات - أدوية نفسية وعصبية - أدوية المخاوف والرهاب    16
+Name: count, dtype: int64
+2026-09-21 15:02:51 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 15:02:51 [INFO] Loading tokenizer: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 15:02:51 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:51 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 15:02:51 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:52 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:52 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/tokenizer_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22da158afa2a2cbf554f6b621824bf4e64433fcb6b%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:52 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 15:02:52 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 15:02:53 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B "HTTP/1.1 200 OK"
+2026-09-21 15:02:53 [INFO] Loading model: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 15:02:53 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:53 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:02:53 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:02:53 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:03:01 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:03:01 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/generation_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22aba45c8e2bd7d66ff3a5e250c9e9233e137a752c%22 "HTTP/1.1 200 OK"
+2026-09-21 15:03:23 [INFO] [dpo] 8/50 done in 22s
+2026-09-21 15:03:43 [INFO] [dpo] 16/50 done in 42s
+2026-09-21 15:04:04 [INFO] [dpo] 24/50 done in 63s
+2026-09-21 15:04:25 [INFO] [dpo] 32/50 done in 84s
+2026-09-21 15:04:45 [INFO] [dpo] 40/50 done in 105s
+2026-09-21 15:05:07 [INFO] [dpo] 48/50 done in 126s
+2026-09-21 15:05:26 [INFO] [dpo] 50/50 done in 145s
+2026-09-21 15:05:26 [INFO] Wrote 50 responses to results/ex4-cbtdp-dpo-dynamic/gen_dpo_shifaa.csv
+2026-09-21 15:05:42 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 15:05:42 [INFO] Loading tokenizer: models/cbtdp-dpo-llama3.1-8b-lora-dynamic
+2026-09-21 15:05:44 [INFO] Loading model: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 15:05:44 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:05:44 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 15:05:44 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:05:44 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:05:44 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 15:05:50 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:05:50 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/generation_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22aba45c8e2bd7d66ff3a5e250c9e9233e137a752c%22 "HTTP/1.1 200 OK"
+2026-09-21 15:05:50 [INFO] Loading CBTDP LoRA adapter: models/cbtdp-dpo-llama3.1-8b-lora-dynamic
+2026-09-21 15:06:28 [INFO] [cbtdp] 8/50 done in 36s
+2026-09-21 15:07:02 [INFO] [cbtdp] 16/50 done in 70s
+2026-09-21 15:07:37 [INFO] [cbtdp] 24/50 done in 105s
+2026-09-21 15:08:11 [INFO] [cbtdp] 32/50 done in 139s
+2026-09-21 15:08:46 [INFO] [cbtdp] 40/50 done in 174s
+2026-09-21 15:09:20 [INFO] [cbtdp] 48/50 done in 208s
+2026-09-21 15:09:54 [INFO] [cbtdp] 50/50 done in 241s
+2026-09-21 15:09:54 [INFO] Wrote 50 responses to results/ex4-cbtdp-dpo-dynamic/gen_cbtdp_shifaa.csv
+2026-09-21 15:10:03 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 15:10:03 [INFO] Loading judge model: HuggingFaceTB/SmolLM3-3B
+2026-09-21 15:10:03 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:10:03 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 15:10:03 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fconfig.json=&etag=%2289ad848b8bbebe0ae085847b7b2e010a4aa1b408%22 "HTTP/1.1 200 OK"
+2026-09-21 15:10:03 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:10:03 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/tokenizer_config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%2261910c2db5cbdc9e6a6f37e14aaf00584cc6ad47%22 "HTTP/1.1 200 OK"
+2026-09-21 15:10:03 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 15:10:03 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 15:10:05 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B "HTTP/1.1 200 OK"
+2026-09-21 15:10:05 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:10:05 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fconfig.json=&etag=%2289ad848b8bbebe0ae085847b7b2e010a4aa1b408%22 "HTTP/1.1 200 OK"
+2026-09-21 15:10:06 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:10:06 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fconfig.json=&etag=%2289ad848b8bbebe0ae085847b7b2e010a4aa1b408%22 "HTTP/1.1 200 OK"
+2026-09-21 15:10:16 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 15:10:16 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/generation_config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%225339609fb994a8644fe865353cf0f1d3ee0130c8%22 "HTTP/1.1 200 OK"
+2026-09-21 15:10:17 [INFO] [pairwise] q0000: winner=cbtdp raw='A'
+2026-09-21 15:10:18 [INFO] [pairwise] q0001: winner=dpo raw='A'
+2026-09-21 15:10:18 [INFO] [pairwise] q0002: winner=dpo raw='A'
+2026-09-21 15:10:18 [INFO] [pairwise] q0003: winner=dpo raw='A\n\n(أختار الاستج'
+2026-09-21 15:10:18 [INFO] [pairwise] q0004: winner=cbtdp raw='A'
+2026-09-21 15:10:18 [INFO] [pairwise] q0005: winner=cbtdp raw='A'
+2026-09-21 15:10:19 [INFO] [pairwise] q0006: winner=cbtdp raw='A'
+2026-09-21 15:10:19 [INFO] [pairwise] q0007: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:20 [INFO] [pairwise] q0008: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:20 [INFO] [pairwise] q0009: winner=dpo raw='A'
+2026-09-21 15:10:20 [INFO] [pairwise] q0010: winner=dpo raw='A'
+2026-09-21 15:10:20 [INFO] [pairwise] q0011: winner=cbtdp raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:20 [INFO] [pairwise] q0012: winner=dpo raw='A\n\n(أفضل استجابة'
+2026-09-21 15:10:21 [INFO] [pairwise] q0013: winner=dpo raw='A\n\n(أختار الاستج'
+2026-09-21 15:10:21 [INFO] [pairwise] q0014: winner=cbtdp raw='A\n\nأنا أختار الاست'
+2026-09-21 15:10:21 [INFO] [pairwise] q0015: winner=cbtdp raw='A'
+2026-09-21 15:10:21 [INFO] [pairwise] q0016: winner=dpo raw='A'
+2026-09-21 15:10:21 [INFO] [pairwise] q0017: winner=cbtdp raw='A'
+2026-09-21 15:10:22 [INFO] [pairwise] q0018: winner=cbtdp raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:22 [INFO] [pairwise] q0019: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:22 [INFO] [pairwise] q0020: winner=cbtdp raw='A'
+2026-09-21 15:10:22 [INFO] [pairwise] q0021: winner=cbtdp raw='A'
+2026-09-21 15:10:22 [INFO] [pairwise] q0022: winner=dpo raw='A'
+2026-09-21 15:10:22 [INFO] [pairwise] q0023: winner=cbtdp raw='B'
+2026-09-21 15:10:22 [INFO] [pairwise] q0024: winner=cbtdp raw='A'
+2026-09-21 15:10:22 [INFO] [pairwise] q0025: winner=dpo raw='A'
+2026-09-21 15:10:23 [INFO] [pairwise] q0026: winner=dpo raw='A'
+2026-09-21 15:10:23 [INFO] [pairwise] q0027: winner=dpo raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:23 [INFO] [pairwise] q0028: winner=cbtdp raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:23 [INFO] [pairwise] q0029: winner=dpo raw='B'
+2026-09-21 15:10:24 [INFO] [pairwise] q0030: winner=cbtdp raw='A\n\n(أفضل استجابة'
+2026-09-21 15:10:24 [INFO] [pairwise] q0031: winner=cbtdp raw='A'
+2026-09-21 15:10:24 [INFO] [pairwise] q0032: winner=cbtdp raw='A'
+2026-09-21 15:10:24 [INFO] [pairwise] q0033: winner=cbtdp raw='A\n\n(أفضل استجابة'
+2026-09-21 15:10:24 [INFO] [pairwise] q0034: winner=dpo raw='A'
+2026-09-21 15:10:25 [INFO] [pairwise] q0035: winner=cbtdp raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:25 [INFO] [pairwise] q0036: winner=cbtdp raw='A'
+2026-09-21 15:10:25 [INFO] [pairwise] q0037: winner=dpo raw='B'
+2026-09-21 15:10:25 [INFO] [pairwise] q0038: winner=cbtdp raw='A\n\n(أفضل استجابة'
+2026-09-21 15:10:25 [INFO] [pairwise] q0039: winner=dpo raw='B'
+2026-09-21 15:10:25 [INFO] [pairwise] q0040: winner=dpo raw='B'
+2026-09-21 15:10:25 [INFO] [pairwise] q0041: winner=cbtdp raw='B'
+2026-09-21 15:10:25 [INFO] [pairwise] q0042: winner=cbtdp raw='B'
+2026-09-21 15:10:26 [INFO] [pairwise] q0043: winner=dpo raw='A\n\n(أختار الاستج'
+2026-09-21 15:10:26 [INFO] [pairwise] q0044: winner=dpo raw='A\n\n(أختار الاستج'
+2026-09-21 15:10:26 [INFO] [pairwise] q0045: winner=dpo raw='A'
+2026-09-21 15:10:26 [INFO] [pairwise] q0046: winner=None raw='لم كيفية التعامل مع الضغ'
+2026-09-21 15:10:27 [INFO] [pairwise] q0047: winner=dpo raw='A'
+2026-09-21 15:10:27 [INFO] [pairwise] q0048: winner=cbtdp raw='A\n\nالاستجابة A هي'
+2026-09-21 15:10:27 [INFO] [pairwise] q0049: winner=dpo raw='A'
+2026-09-21 15:10:27 [INFO] Wrote pairwise judgments to results/ex4-cbtdp-dpo-dynamic/judge_pairwise_shifaa.csv
+2026-09-21 15:10:29 [INFO] [absolute] q0000 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:10:32 [INFO] [absolute] q0001 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:10:34 [INFO] [absolute] q0002 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:10:36 [INFO] [absolute] q0003 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:10:39 [INFO] [absolute] q0004 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:10:41 [INFO] [absolute] q0005 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:10:44 [INFO] [absolute] q0006 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:10:46 [INFO] [absolute] q0007 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:10:48 [INFO] [absolute] q0008 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:10:53 [INFO] [absolute] q0009 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:10:55 [INFO] [absolute] q0010 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:10:57 [INFO] [absolute] q0011 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:11:00 [INFO] [absolute] q0012 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:02 [INFO] [absolute] q0013 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:05 [INFO] [absolute] q0014 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:07 [INFO] [absolute] q0015 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:09 [INFO] [absolute] q0016 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:12 [INFO] [absolute] q0017 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:14 [INFO] [absolute] q0018 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:16 [INFO] [absolute] q0019 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:19 [INFO] [absolute] q0020 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:21 [INFO] [absolute] q0021 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:24 [INFO] [absolute] q0022 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:26 [INFO] [absolute] q0023 (dpo): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:11:28 [INFO] [absolute] q0024 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:31 [INFO] [absolute] q0025 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:11:33 [INFO] [absolute] q0026 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:35 [INFO] [absolute] q0027 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:38 [INFO] [absolute] q0028 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:40 [INFO] [absolute] q0029 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:43 [INFO] [absolute] q0030 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:11:45 [INFO] [absolute] q0031 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:47 [INFO] [absolute] q0032 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:50 [INFO] [absolute] q0033 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:52 [INFO] [absolute] q0034 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:54 [INFO] [absolute] q0035 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:57 [INFO] [absolute] q0036 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:11:59 [INFO] [absolute] q0037 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:01 [INFO] [absolute] q0038 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:04 [INFO] [absolute] q0039 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:06 [INFO] [absolute] q0040 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:09 [INFO] [absolute] q0041 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:11 [INFO] [absolute] q0042 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:13 [INFO] [absolute] q0043 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:16 [INFO] [absolute] q0044 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:18 [INFO] [absolute] q0045 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:22 [INFO] [absolute] q0046 (dpo): scores=None
+2026-09-21 15:12:25 [INFO] [absolute] q0047 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:27 [INFO] [absolute] q0048 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:29 [INFO] [absolute] q0049 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:32 [INFO] [absolute] q0000 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:34 [INFO] [absolute] q0001 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:37 [INFO] [absolute] q0002 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:39 [INFO] [absolute] q0003 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:41 [INFO] [absolute] q0004 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:44 [INFO] [absolute] q0005 (cbtdp): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:46 [INFO] [absolute] q0006 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:48 [INFO] [absolute] q0007 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:12:51 [INFO] [absolute] q0008 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:53 [INFO] [absolute] q0009 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:12:55 [INFO] [absolute] q0010 (cbtdp): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-21 15:12:58 [INFO] [absolute] q0011 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:00 [INFO] [absolute] q0012 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:03 [INFO] [absolute] q0013 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:05 [INFO] [absolute] q0014 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:07 [INFO] [absolute] q0015 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:10 [INFO] [absolute] q0016 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:12 [INFO] [absolute] q0017 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:14 [INFO] [absolute] q0018 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:17 [INFO] [absolute] q0019 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:19 [INFO] [absolute] q0020 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:22 [INFO] [absolute] q0021 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:24 [INFO] [absolute] q0022 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:26 [INFO] [absolute] q0023 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:29 [INFO] [absolute] q0024 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:31 [INFO] [absolute] q0025 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:13:33 [INFO] [absolute] q0026 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:36 [INFO] [absolute] q0027 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 3.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:13:38 [INFO] [absolute] q0028 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:41 [INFO] [absolute] q0029 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:43 [INFO] [absolute] q0030 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:13:45 [INFO] [absolute] q0031 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:48 [INFO] [absolute] q0032 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:50 [INFO] [absolute] q0033 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:52 [INFO] [absolute] q0034 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:55 [INFO] [absolute] q0035 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:57 [INFO] [absolute] q0036 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:13:59 [INFO] [absolute] q0037 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:14:02 [INFO] [absolute] q0038 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:14:04 [INFO] [absolute] q0039 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:14:07 [INFO] [absolute] q0040 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:14:09 [INFO] [absolute] q0041 (cbtdp): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 3.0}
+2026-09-21 15:14:11 [INFO] [absolute] q0042 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:14:14 [INFO] [absolute] q0043 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:14:16 [INFO] [absolute] q0044 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:14:19 [INFO] [absolute] q0045 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:14:23 [INFO] [absolute] q0046 (cbtdp): scores=None
+2026-09-21 15:14:25 [INFO] [absolute] q0047 (cbtdp): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 2.0, 'clarity': 5.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 15:14:28 [INFO] [absolute] q0048 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:14:30 [INFO] [absolute] q0049 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 15:14:30 [INFO] Wrote absolute judgments to results/ex4-cbtdp-dpo-dynamic/judge_absolute_shifaa.csv
+2026-09-21 15:14:32 [INFO] Logging to logs/exp_4-dynamic.log
+2026-09-21 15:14:32 [INFO] Wrote summary to results/ex4-cbtdp-dpo-dynamic/summary_shifaa.md
+2026-09-21 15:14:32 [INFO] 
+# Results: cbtdp vs dpo
+
+Pairwise judge comparisons: 49/50 parsed. cbtdp wins: 24, dpo wins: 25, cbtdp win rate: 49.0%
+
+## Mean Likert scores per principle (1-5, judge-rated)
+
+| model   |   empathy |   personalization |   self_exploration |   clarity |   autonomy |   harm_avoidance |   stage_sensitivity |
+|:--------|----------:|------------------:|-------------------:|----------:|-----------:|-----------------:|--------------------:|
+| dpo     |      4.76 |              4.73 |               4.51 |      4.37 |       4.43 |             4.76 |                4.71 |
+| cbtdp   |      4.78 |              4.69 |               4.49 |      4.59 |       4.63 |             4.76 |                4.67 |
+
+## Delta (cbtdp - dpo)
+
+|                   |   delta |
+|:------------------|--------:|
+| empathy           |    0.02 |
+| personalization   |   -0.04 |
+| self_exploration  |   -0.02 |
+| clarity           |    0.22 |
+| autonomy          |    0.2  |
+| harm_avoidance    |    0    |
+| stage_sensitivity |   -0.04 |
+
+## Judge parse coverage
+
+Absolute scores parsed: {'cbtdp': 49, 'dpo': 49} out of {'cbtdp': 50, 'dpo': 50} per model
+

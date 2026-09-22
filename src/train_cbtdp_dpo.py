@@ -23,8 +23,20 @@ Both `margin` and `weight` are precomputed once per row by
 src/prepare_cbtdp_data.py and consumed here as dataset columns, the same
 "precompute once, trainer just reads columns" pattern as train_modpo.py's
 `margin` column.
+
+BASE_MODEL is the already-DPO'd checkpoint (Psychotherapy-LLM/PsyCoPref-Llama3-8B),
+not the untouched Llama base that train_modpo.py's MODPO adapter trains from.
+This is deliberate: outline.md's "Experiment A" asks whether the clinical
+margin/skill-weight objective improves on top of standard DPO, which requires
+continuing training from the DPO checkpoint -- training a LoRA from the
+untouched base instead (as an earlier version of this script did) just
+measures "a few dozen steps of light tuning vs. a model trained on the full
+PsyCoPref set," which isn't an ablation of the CBT-DP-DPO loss at all (see
+results/ex4-cbtdp-dpo-finegrained and -balanced, both trained from base: dpo
+wins 80-84% of the time purely on training-scale grounds).
 """
 import argparse
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -38,7 +50,17 @@ from trl.trainer.dpo_trainer import DataCollatorForPreference
 
 from logging_utils import default_log_path, setup_logging
 
-BASE_MODEL = "NousResearch/Meta-Llama-3.1-8B-Instruct"
+BASE_MODEL = "Psychotherapy-LLM/PsyCoPref-Llama3-8B"
+
+# Written to <output_dir>/cbtdp_train_config.json after every successful
+# save, and checked before any resume_from_checkpoint: a checkpoint dir left
+# over from a run with a *different* BASE_MODEL is not resumable -- the LoRA
+# weights it holds are a delta computed relative to different base weights,
+# and silently reusing them (as happened once with the base-model switch
+# above: a checkpoint that had already reached max_steps caused
+# resume_from_checkpoint to do zero additional training and just re-save the
+# old, wrong-base adapter) produces an uncontrolled hybrid, not an error.
+TRAIN_CONFIG_MARKER = "cbtdp_train_config.json"
 
 # Same English CBT system prompt as train_modpo.py, kept identical on purpose:
 # both RQ2 (MODPO) and ex4 (CBT-DP-DPO) train on English and are then
@@ -215,6 +237,22 @@ def main():
 
     resume = any(Path(args.output_dir).glob("checkpoint-*"))
     if resume:
+        marker_path = Path(args.output_dir) / TRAIN_CONFIG_MARKER
+        if not marker_path.exists():
+            raise SystemExit(
+                f"{args.output_dir} has checkpoint(s) but no {TRAIN_CONFIG_MARKER} "
+                f"(pre-dates this safety check, or was never fully trained) -- cannot verify "
+                f"they were trained from BASE_MODEL={BASE_MODEL!r}. Refusing to resume: delete "
+                f"the directory to retrain from scratch, or use a different --output-dir."
+            )
+        recorded_base_model = json.loads(marker_path.read_text())["base_model"]
+        if recorded_base_model != BASE_MODEL:
+            raise SystemExit(
+                f"{args.output_dir} was trained from base_model={recorded_base_model!r}, but "
+                f"this run's BASE_MODEL is {BASE_MODEL!r}. Refusing to resume from a checkpoint "
+                f"trained against different base weights -- delete the directory to retrain from "
+                f"scratch, or use a different --output-dir (a fresh RUN_TAG)."
+            )
         logger.info(f"Found existing checkpoint(s) in {args.output_dir}, resuming")
     else:
         logger.info("Starting CBT-DP-DPO training")
@@ -222,6 +260,7 @@ def main():
 
     trainer.save_model(args.output_dir)
     tokenizer.save_pretrained(args.output_dir)
+    (Path(args.output_dir) / TRAIN_CONFIG_MARKER).write_text(json.dumps({"base_model": BASE_MODEL}))
     logger.info(f"Saved LoRA adapter to {args.output_dir}")
 
 

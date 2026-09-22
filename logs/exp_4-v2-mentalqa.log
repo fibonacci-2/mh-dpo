@@ -1,0 +1,242 @@
+2026-09-21 14:12:29 [INFO] Logging to logs/exp_4-v2-mentalqa.log
+2026-09-21 14:12:29 [INFO] Loading tokenizer: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 14:12:29 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:12:29 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 14:12:29 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:12:29 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:12:29 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/tokenizer_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22da158afa2a2cbf554f6b621824bf4e64433fcb6b%22 "HTTP/1.1 200 OK"
+2026-09-21 14:12:29 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 14:12:29 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 14:12:32 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B "HTTP/1.1 200 OK"
+2026-09-21 14:12:32 [INFO] Loading model: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 14:12:32 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:12:32 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:12:32 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:12:32 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:12:39 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:12:39 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/generation_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22aba45c8e2bd7d66ff3a5e250c9e9233e137a752c%22 "HTTP/1.1 200 OK"
+2026-09-21 14:13:01 [INFO] [dpo] 8/50 done in 22s
+2026-09-21 14:13:23 [INFO] [dpo] 16/50 done in 44s
+2026-09-21 14:13:43 [INFO] [dpo] 24/50 done in 64s
+2026-09-21 14:14:03 [INFO] [dpo] 32/50 done in 84s
+2026-09-21 14:14:23 [INFO] [dpo] 40/50 done in 104s
+2026-09-21 14:14:43 [INFO] [dpo] 48/50 done in 124s
+2026-09-21 14:15:03 [INFO] [dpo] 50/50 done in 144s
+2026-09-21 14:15:03 [INFO] Wrote 50 responses to results/ex4-cbtdp-dpo-v2/gen_dpo_mentalqa.csv
+2026-09-21 14:15:16 [INFO] Logging to logs/exp_4-v2-mentalqa.log
+2026-09-21 14:15:16 [INFO] Loading tokenizer: models/cbtdp-dpo-llama3.1-8b-lora-v2
+2026-09-21 14:15:19 [INFO] Loading model: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 14:15:19 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:15:19 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 14:15:19 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:15:19 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:15:19 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:15:26 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:15:26 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/generation_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22aba45c8e2bd7d66ff3a5e250c9e9233e137a752c%22 "HTTP/1.1 200 OK"
+2026-09-21 14:15:26 [INFO] Loading CBTDP LoRA adapter: models/cbtdp-dpo-llama3.1-8b-lora-v2
+2026-09-21 14:16:03 [INFO] [cbtdp] 8/50 done in 35s
+2026-09-21 14:16:38 [INFO] [cbtdp] 16/50 done in 70s
+2026-09-21 14:17:13 [INFO] [cbtdp] 24/50 done in 105s
+2026-09-21 14:17:49 [INFO] [cbtdp] 32/50 done in 141s
+2026-09-21 14:18:25 [INFO] [cbtdp] 40/50 done in 177s
+2026-09-21 14:19:01 [INFO] [cbtdp] 48/50 done in 213s
+2026-09-21 14:19:39 [INFO] [cbtdp] 50/50 done in 250s
+2026-09-21 14:19:39 [INFO] Wrote 50 responses to results/ex4-cbtdp-dpo-v2/gen_cbtdp_mentalqa.csv
+2026-09-21 14:19:48 [INFO] Logging to logs/exp_4-v2-mentalqa.log
+2026-09-21 14:19:48 [INFO] Loading judge model: HuggingFaceTB/SmolLM3-3B
+2026-09-21 14:19:48 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:19:48 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-21 14:19:48 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fconfig.json=&etag=%2289ad848b8bbebe0ae085847b7b2e010a4aa1b408%22 "HTTP/1.1 200 OK"
+2026-09-21 14:19:48 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:19:48 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/tokenizer_config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%2261910c2db5cbdc9e6a6f37e14aaf00584cc6ad47%22 "HTTP/1.1 200 OK"
+2026-09-21 14:19:48 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 14:19:48 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 14:19:51 [INFO] HTTP Request: GET https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B "HTTP/1.1 200 OK"
+2026-09-21 14:19:51 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:19:51 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fconfig.json=&etag=%2289ad848b8bbebe0ae085847b7b2e010a4aa1b408%22 "HTTP/1.1 200 OK"
+2026-09-21 14:19:52 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:19:52 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fconfig.json=&etag=%2289ad848b8bbebe0ae085847b7b2e010a4aa1b408%22 "HTTP/1.1 200 OK"
+2026-09-21 14:19:58 [INFO] HTTP Request: HEAD https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:19:58 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/HuggingFaceTB/SmolLM3-3B/a07cc9a04f16550a088caea529712d1d335b0ac1/generation_config.json?%2FHuggingFaceTB%2FSmolLM3-3B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%225339609fb994a8644fe865353cf0f1d3ee0130c8%22 "HTTP/1.1 200 OK"
+2026-09-21 14:20:01 [INFO] [pairwise] q0000: winner=cbtdp raw='A\n\n(أفضل استجابة'
+2026-09-21 14:20:01 [INFO] [pairwise] q0001: winner=dpo raw='A'
+2026-09-21 14:20:01 [INFO] [pairwise] q0002: winner=dpo raw='A'
+2026-09-21 14:20:01 [INFO] [pairwise] q0003: winner=dpo raw='A'
+2026-09-21 14:20:02 [INFO] [pairwise] q0004: winner=cbtdp raw='A'
+2026-09-21 14:20:02 [INFO] [pairwise] q0005: winner=cbtdp raw='A'
+2026-09-21 14:20:02 [INFO] [pairwise] q0006: winner=dpo raw='B'
+2026-09-21 14:20:02 [INFO] [pairwise] q0007: winner=dpo raw='A'
+2026-09-21 14:20:02 [INFO] [pairwise] q0008: winner=dpo raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0009: winner=dpo raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0010: winner=dpo raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0011: winner=cbtdp raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0012: winner=dpo raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0013: winner=dpo raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0014: winner=cbtdp raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0015: winner=cbtdp raw='A'
+2026-09-21 14:20:03 [INFO] [pairwise] q0016: winner=dpo raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0017: winner=cbtdp raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0018: winner=cbtdp raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0019: winner=dpo raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0020: winner=cbtdp raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0021: winner=cbtdp raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0022: winner=dpo raw='A'
+2026-09-21 14:20:04 [INFO] [pairwise] q0023: winner=dpo raw='A'
+2026-09-21 14:20:05 [INFO] [pairwise] q0024: winner=dpo raw='B'
+2026-09-21 14:20:05 [INFO] [pairwise] q0025: winner=dpo raw='A'
+2026-09-21 14:20:05 [INFO] [pairwise] q0026: winner=dpo raw='A'
+2026-09-21 14:20:05 [INFO] [pairwise] q0027: winner=dpo raw='A'
+2026-09-21 14:20:05 [INFO] [pairwise] q0028: winner=cbtdp raw='A'
+2026-09-21 14:20:05 [INFO] [pairwise] q0029: winner=cbtdp raw='A'
+2026-09-21 14:20:06 [INFO] [pairwise] q0030: winner=cbtdp raw='A\n\n(أفضل استجابة'
+2026-09-21 14:20:06 [INFO] [pairwise] q0031: winner=cbtdp raw='A\n\n(أفضل استجابة'
+2026-09-21 14:20:06 [INFO] [pairwise] q0032: winner=cbtdp raw='A'
+2026-09-21 14:20:06 [INFO] [pairwise] q0033: winner=cbtdp raw='A'
+2026-09-21 14:20:06 [INFO] [pairwise] q0034: winner=dpo raw='A'
+2026-09-21 14:20:06 [INFO] [pairwise] q0035: winner=cbtdp raw='A'
+2026-09-21 14:20:06 [INFO] [pairwise] q0036: winner=cbtdp raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0037: winner=cbtdp raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0038: winner=cbtdp raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0039: winner=cbtdp raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0040: winner=cbtdp raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0041: winner=dpo raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0042: winner=dpo raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0043: winner=dpo raw='A'
+2026-09-21 14:20:07 [INFO] [pairwise] q0044: winner=dpo raw='A\n\nالاستجابة A ت'
+2026-09-21 14:20:07 [INFO] [pairwise] q0045: winner=dpo raw='A'
+2026-09-21 14:20:08 [INFO] [pairwise] q0046: winner=dpo raw='A'
+2026-09-21 14:20:08 [INFO] [pairwise] q0047: winner=dpo raw='A'
+2026-09-21 14:20:08 [INFO] [pairwise] q0048: winner=cbtdp raw='A'
+2026-09-21 14:20:08 [INFO] [pairwise] q0049: winner=dpo raw='A'
+2026-09-21 14:20:08 [INFO] Wrote pairwise judgments to results/ex4-cbtdp-dpo-v2/judge_pairwise_mentalqa.csv
+2026-09-21 14:20:10 [INFO] [absolute] q0000 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:13 [INFO] [absolute] q0001 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:16 [INFO] [absolute] q0002 (dpo): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:20:18 [INFO] [absolute] q0003 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:21 [INFO] [absolute] q0004 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:24 [INFO] [absolute] q0005 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:20:26 [INFO] [absolute] q0006 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:29 [INFO] [absolute] q0007 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:34 [INFO] [absolute] q0008 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:37 [INFO] [absolute] q0009 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:40 [INFO] [absolute] q0010 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:42 [INFO] [absolute] q0011 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:45 [INFO] [absolute] q0012 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:48 [INFO] [absolute] q0013 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:51 [INFO] [absolute] q0014 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:53 [INFO] [absolute] q0015 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:56 [INFO] [absolute] q0016 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:20:59 [INFO] [absolute] q0017 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:01 [INFO] [absolute] q0018 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:04 [INFO] [absolute] q0019 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:07 [INFO] [absolute] q0020 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:09 [INFO] [absolute] q0021 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:12 [INFO] [absolute] q0022 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:21:15 [INFO] [absolute] q0023 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:17 [INFO] [absolute] q0024 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 3.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:21:20 [INFO] [absolute] q0025 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:21:23 [INFO] [absolute] q0026 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:25 [INFO] [absolute] q0027 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:28 [INFO] [absolute] q0028 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:31 [INFO] [absolute] q0029 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:33 [INFO] [absolute] q0030 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:36 [INFO] [absolute] q0031 (dpo): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:21:39 [INFO] [absolute] q0032 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:41 [INFO] [absolute] q0033 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:44 [INFO] [absolute] q0034 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:47 [INFO] [absolute] q0035 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:21:49 [INFO] [absolute] q0036 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:52 [INFO] [absolute] q0037 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:55 [INFO] [absolute] q0038 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:21:57 [INFO] [absolute] q0039 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:00 [INFO] [absolute] q0040 (dpo): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:22:03 [INFO] [absolute] q0041 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:05 [INFO] [absolute] q0042 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:08 [INFO] [absolute] q0043 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:11 [INFO] [absolute] q0044 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:13 [INFO] [absolute] q0045 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:16 [INFO] [absolute] q0046 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:19 [INFO] [absolute] q0047 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:21 [INFO] [absolute] q0048 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:24 [INFO] [absolute] q0049 (dpo): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:27 [INFO] [absolute] q0000 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:22:29 [INFO] [absolute] q0001 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:22:32 [INFO] [absolute] q0002 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:35 [INFO] [absolute] q0003 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:37 [INFO] [absolute] q0004 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:40 [INFO] [absolute] q0005 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:43 [INFO] [absolute] q0006 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:22:45 [INFO] [absolute] q0007 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:48 [INFO] [absolute] q0008 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:50 [INFO] [absolute] q0009 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:53 [INFO] [absolute] q0010 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:55 [INFO] [absolute] q0011 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:22:58 [INFO] [absolute] q0012 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:23:00 [INFO] [absolute] q0013 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:03 [INFO] [absolute] q0014 (cbtdp): scores={'empathy': 4.0, 'personalization': 3.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:23:05 [INFO] [absolute] q0015 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 4.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:23:08 [INFO] [absolute] q0016 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:10 [INFO] [absolute] q0017 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:13 [INFO] [absolute] q0018 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:15 [INFO] [absolute] q0019 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:18 [INFO] [absolute] q0020 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:21 [INFO] [absolute] q0021 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:23:23 [INFO] [absolute] q0022 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:26 [INFO] [absolute] q0023 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:29 [INFO] [absolute] q0024 (cbtdp): scores={'empathy': 4.0, 'personalization': 4.0, 'self_exploration': 4.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:23:31 [INFO] [absolute] q0025 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:34 [INFO] [absolute] q0026 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:37 [INFO] [absolute] q0027 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:39 [INFO] [absolute] q0028 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:42 [INFO] [absolute] q0029 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:45 [INFO] [absolute] q0030 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:47 [INFO] [absolute] q0031 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 4.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:23:50 [INFO] [absolute] q0032 (cbtdp): scores={'empathy': 3.0, 'personalization': 1.0, 'self_exploration': 1.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 3.0}
+2026-09-21 14:23:53 [INFO] [absolute] q0033 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:55 [INFO] [absolute] q0034 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:23:58 [INFO] [absolute] q0035 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:00 [INFO] [absolute] q0036 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:03 [INFO] [absolute] q0037 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:05 [INFO] [absolute] q0038 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:08 [INFO] [absolute] q0039 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:24:10 [INFO] [absolute] q0040 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:13 [INFO] [absolute] q0041 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:15 [INFO] [absolute] q0042 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:18 [INFO] [absolute] q0043 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:20 [INFO] [absolute] q0044 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:23 [INFO] [absolute] q0045 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:25 [INFO] [absolute] q0046 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:28 [INFO] [absolute] q0047 (cbtdp): scores={'empathy': 5.0, 'personalization': 4.0, 'self_exploration': 5.0, 'clarity': 4.0, 'autonomy': 4.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 4.0}
+2026-09-21 14:24:30 [INFO] [absolute] q0048 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:33 [INFO] [absolute] q0049 (cbtdp): scores={'empathy': 5.0, 'personalization': 5.0, 'self_exploration': 5.0, 'clarity': 5.0, 'autonomy': 5.0, 'harm_avoidance': 5.0, 'stage_sensitivity': 5.0}
+2026-09-21 14:24:33 [INFO] Wrote absolute judgments to results/ex4-cbtdp-dpo-v2/judge_absolute_mentalqa.csv
+2026-09-21 14:24:35 [INFO] Logging to logs/exp_4-v2-mentalqa.log
+2026-09-21 14:24:35 [INFO] Wrote summary to results/ex4-cbtdp-dpo-v2/summary_mentalqa.md
+2026-09-21 14:24:35 [INFO] 
+# Results: cbtdp vs dpo
+
+Pairwise judge comparisons: 50/50 parsed. cbtdp wins: 23, dpo wins: 27, cbtdp win rate: 46.0%
+
+## Mean Likert scores per principle (1-5, judge-rated)
+
+| model   |   empathy |   personalization |   self_exploration |   clarity |   autonomy |   harm_avoidance |   stage_sensitivity |
+|:--------|----------:|------------------:|-------------------:|----------:|-----------:|-----------------:|--------------------:|
+| dpo     |      4.94 |               4.9 |                4.9 |      4.68 |       4.68 |             4.92 |                4.84 |
+| cbtdp   |      4.88 |               4.8 |                4.8 |      4.74 |       4.74 |             4.94 |                4.74 |
+
+## Delta (cbtdp - dpo)
+
+|                   |   delta |
+|:------------------|--------:|
+| empathy           |   -0.06 |
+| personalization   |   -0.1  |
+| self_exploration  |   -0.1  |
+| clarity           |    0.06 |
+| autonomy          |    0.06 |
+| harm_avoidance    |    0.02 |
+| stage_sensitivity |   -0.1  |
+
+## Judge parse coverage
+
+Absolute scores parsed: {'cbtdp': 50, 'dpo': 50} out of {'cbtdp': 50, 'dpo': 50} per model
+

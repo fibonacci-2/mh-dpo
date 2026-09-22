@@ -1,99 +1,75 @@
 qid,a_model,b_model,raw_judgment,winner
-q0000,modpo,dpo,"A
+q0000,modpo,dpo,B,dpo
+q0001,dpo,modpo,"A
 
-(أفضل استجابة",modpo
-q0001,dpo,modpo,"B
-
-(أشارت الاستج",modpo
-q0002,dpo,modpo,B,modpo
+(أشارت الاستج",dpo
+q0002,dpo,modpo,A,dpo
 q0003,dpo,modpo,A,dpo
-q0004,modpo,dpo,"A
-
-(أفضل استجابة",modpo
-q0005,modpo,dpo,"A
-
-(الاستجابة A",modpo
+q0004,modpo,dpo,B,dpo
+q0005,modpo,dpo,B,dpo
 q0006,modpo,dpo,B,dpo
-q0007,dpo,modpo,B,modpo
-q0008,dpo,modpo,B,modpo
-q0009,dpo,modpo,"B
+q0007,dpo,modpo,"A
+
+(أفضل استجابة",dpo
+q0008,dpo,modpo,A,dpo
+q0009,dpo,modpo,"A
+
+الاستجابة A هي",dpo
+q0010,dpo,modpo,A,dpo
+q0011,modpo,dpo,A,modpo
+q0012,dpo,modpo,A,dpo
+q0013,dpo,modpo,"A
+
+الاستجابة A هي",dpo
+q0014,modpo,dpo,A,modpo
+q0015,modpo,dpo,B,dpo
+q0016,dpo,modpo,A,dpo
+q0017,modpo,dpo,B,dpo
+q0018,modpo,dpo,B,dpo
+q0019,dpo,modpo,"A
+
+(أفضل استجابة",dpo
+q0020,modpo,dpo,B,dpo
+q0021,modpo,dpo,B,dpo
+q0022,dpo,modpo,A,dpo
+q0023,dpo,modpo,"A
+
+الاستجابة A هي",dpo
+q0024,modpo,dpo,B,dpo
+q0025,dpo,modpo,"A
+
+الاستجابة A هي",dpo
+q0026,dpo,modpo,A,dpo
+q0027,dpo,modpo,"A
+
+الاستجابة A هي",dpo
+q0028,modpo,dpo,B,dpo
+q0029,modpo,dpo,B,dpo
+q0030,modpo,dpo,B,dpo
+q0031,modpo,dpo,B,dpo
+q0032,modpo,dpo,B,dpo
+q0033,modpo,dpo,A,modpo
+q0034,dpo,modpo,"A
+
+الاستجابة A هي",dpo
+q0035,modpo,dpo,B,dpo
+q0036,modpo,dpo,B,dpo
+q0037,modpo,dpo,B,dpo
+q0038,modpo,dpo,"A
+
+الاستجابة A هي",modpo
+q0039,modpo,dpo,B,dpo
+q0040,modpo,dpo,A,modpo
+q0041,dpo,modpo,"B
+
+(أشير إلى الاست",modpo
+q0042,dpo,modpo,"B
 
 الاستجابة B هي",modpo
-q0010,dpo,modpo,B,modpo
-q0011,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0012,dpo,modpo,B,modpo
-q0013,dpo,modpo,B,modpo
-q0014,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0015,modpo,dpo,A,modpo
-q0016,dpo,modpo,B,modpo
-q0017,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0018,modpo,dpo,"A
-
-(استجابة A هي",modpo
-q0019,dpo,modpo,B,modpo
-q0020,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0021,modpo,dpo,B,dpo
-q0022,dpo,modpo,B,modpo
-q0023,dpo,modpo,B,modpo
-q0024,modpo,dpo,"A
-
-(الاستجابة A",modpo
-q0025,dpo,modpo,B,modpo
-q0026,dpo,modpo,B,modpo
-q0027,dpo,modpo,"B
-
-(الاستجابة B",modpo
-q0028,modpo,dpo,"A
-
-(أفضل استجابة",modpo
-q0029,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0030,modpo,dpo,"B
-
-(تم تفسير الاستج",dpo
-q0031,modpo,dpo,"A
-
-(أفضل استجابة",modpo
-q0032,modpo,dpo,"A
-
-(الاستجابة A",modpo
-q0033,modpo,dpo,B,dpo
-q0034,dpo,modpo,B,modpo
-q0035,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0036,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0037,modpo,dpo,"B
-
-(تم اختيار الاستج",dpo
-q0038,modpo,dpo,B,dpo
-q0039,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0040,modpo,dpo,"A
-
-الاستجابة A هي",modpo
-q0041,dpo,modpo,B,modpo
-q0042,dpo,modpo,B,modpo
-q0043,dpo,modpo,B,modpo
-q0044,dpo,modpo,"B
-
-(الاستجابة B",modpo
-q0045,dpo,modpo,B,modpo
-q0046,dpo,modpo,الاستجابة A هي الأفضل,dpo
-q0047,dpo,modpo,B,modpo
-q0048,modpo,dpo,"A
-
-(أنا أختار",modpo
-q0049,dpo,modpo,B,modpo
+q0043,dpo,modpo,A,dpo
+q0044,dpo,modpo,B,modpo
+q0045,dpo,modpo,A,dpo
+q0046,dpo,modpo,على التركيز، وأتمن,
+q0047,dpo,modpo,A,dpo
+q0048,modpo,dpo,A,modpo
+q0049,dpo,modpo,A,dpo

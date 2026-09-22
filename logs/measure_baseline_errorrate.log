@@ -1,0 +1,197 @@
+2026-09-21 14:20:28 [INFO] Logging to logs/measure_baseline_errorrate.log
+2026-09-21 14:20:28 [INFO] Sampled 150 CBT-Bench client statements (seed=42)
+2026-09-21 14:20:28 [INFO] Loading baseline generation model: Psychotherapy-LLM/PsyCoPref-Llama3-8B
+2026-09-21 14:20:28 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:20:28 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:20:28 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:20:28 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/tokenizer_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22da158afa2a2cbf554f6b621824bf4e64433fcb6b%22 "HTTP/1.1 200 OK"
+2026-09-21 14:20:28 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 14:20:28 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 14:20:30 [INFO] HTTP Request: GET https://huggingface.co/api/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B "HTTP/1.1 200 OK"
+2026-09-21 14:20:30 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:20:30 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:20:30 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:20:30 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac7189d15300a44e0c0aae6fa2e5a1642ff4977f%22 "HTTP/1.1 200 OK"
+2026-09-21 14:20:36 [INFO] HTTP Request: HEAD https://huggingface.co/Psychotherapy-LLM/PsyCoPref-Llama3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-21 14:20:36 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Psychotherapy-LLM/PsyCoPref-Llama3-8B/422d5b624cb9298cd3002e996605121ad47b23f6/generation_config.json?%2FPsychotherapy-LLM%2FPsyCoPref-Llama3-8B%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22aba45c8e2bd7d66ff3a5e250c9e9233e137a752c%22 "HTTP/1.1 200 OK"
+2026-09-21 14:20:49 [INFO] [baseline-gen] 8/150 done
+2026-09-21 14:21:03 [INFO] [baseline-gen] 16/150 done
+2026-09-21 14:21:15 [INFO] [baseline-gen] 24/150 done
+2026-09-21 14:21:27 [INFO] [baseline-gen] 32/150 done
+2026-09-21 14:21:40 [INFO] [baseline-gen] 40/150 done
+2026-09-21 14:21:52 [INFO] [baseline-gen] 48/150 done
+2026-09-21 14:22:07 [INFO] [baseline-gen] 56/150 done
+2026-09-21 14:22:21 [INFO] [baseline-gen] 64/150 done
+2026-09-21 14:22:33 [INFO] [baseline-gen] 72/150 done
+2026-09-21 14:22:44 [INFO] [baseline-gen] 80/150 done
+2026-09-21 14:22:55 [INFO] [baseline-gen] 88/150 done
+2026-09-21 14:23:10 [INFO] [baseline-gen] 96/150 done
+2026-09-21 14:23:22 [INFO] [baseline-gen] 104/150 done
+2026-09-21 14:23:35 [INFO] [baseline-gen] 112/150 done
+2026-09-21 14:23:49 [INFO] [baseline-gen] 120/150 done
+2026-09-21 14:24:02 [INFO] [baseline-gen] 128/150 done
+2026-09-21 14:24:13 [INFO] [baseline-gen] 136/150 done
+2026-09-21 14:24:24 [INFO] [baseline-gen] 144/150 done
+2026-09-21 14:24:36 [INFO] [baseline-gen] 150/150 done
+2026-09-21 14:24:37 [INFO] Loading judge model: meta-llama/Llama-3.2-3B-Instruct
+2026-09-21 14:24:37 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-21 14:24:37 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-21 14:24:37 [INFO] HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-21 14:24:37 [INFO] HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-21 14:24:39 [INFO] HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct "HTTP/1.1 200 OK"
+2026-09-21 14:24:39 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-21 14:24:39 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-21 14:28:46 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-09-21 14:28:59 [INFO] [judge] ex07_7_b_4: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:29:09 [INFO] [judge] ex05_5_m_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:29:18 [INFO] [judge] ex06_6_b_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:29:30 [INFO] [judge] ex05_5_a_5: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': None}
+2026-09-21 14:29:41 [INFO] [judge] ex08_8_b_5: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:29:52 [INFO] [judge] ex02_2_a_5: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:30:02 [INFO] [judge] ex07_7_b_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:30:13 [INFO] [judge] ex09_9_m_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:30:23 [INFO] [judge] ex07_7_b_1: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:30:32 [INFO] [judge] ex09_9_a_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:30:43 [INFO] [judge] ex02_2_m_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:30:53 [INFO] [judge] ex06_6_a_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:31:05 [INFO] [judge] ex02_2_b_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:31:15 [INFO] [judge] ex08_8_a_5: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:31:24 [INFO] [judge] ex02_2_m_6: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': None}
+2026-09-21 14:31:35 [INFO] [judge] ex03_3_b_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:31:44 [INFO] [judge] ex08_8_m_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:31:53 [INFO] [judge] ex07_7_m_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:32:03 [INFO] [judge] ex10_10_a_2: {'sq_ablation': None, 'ev_ablation': True, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:32:13 [INFO] [judge] ex06_6_b_1: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:32:24 [INFO] [judge] ex07_7_m_1: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:32:34 [INFO] [judge] ex02_2_b_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:32:45 [INFO] [judge] ex01_1_a_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:32:56 [INFO] [judge] ex01_1_m_6: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:33:04 [INFO] [judge] ex03_3_b_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:33:15 [INFO] [judge] ex07_7_a_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:33:25 [INFO] [judge] ex05_5_m_2: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:33:33 [INFO] [judge] ex04_4_m_6: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:33:44 [INFO] [judge] ex04_4_m_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:33:55 [INFO] [judge] ex07_7_b_5: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:34:06 [INFO] [judge] ex04_4_b_1: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:34:18 [INFO] [judge] ex10_10_m_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:34:28 [INFO] [judge] ex04_4_m_7: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:34:39 [INFO] [judge] ex09_9_a_3: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:34:50 [INFO] [judge] ex08_8_a_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:35:00 [INFO] [judge] ex09_9_b_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:35:10 [INFO] [judge] ex09_9_b_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:35:18 [INFO] [judge] ex05_5_b_5: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:35:28 [INFO] [judge] ex03_3_a_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:35:39 [INFO] [judge] ex02_2_a_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:35:48 [INFO] [judge] ex09_9_m_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:35:58 [INFO] [judge] ex06_6_b_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:36:07 [INFO] [judge] ex09_9_m_1: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:36:16 [INFO] [judge] ex03_3_m_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:36:27 [INFO] [judge] ex05_5_a_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:36:38 [INFO] [judge] ex02_2_m_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:36:51 [INFO] [judge] ex09_9_m_5: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:37:00 [INFO] [judge] ex06_6_m_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:37:11 [INFO] [judge] ex01_1_a_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:37:20 [INFO] [judge] ex04_4_a_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:37:30 [INFO] [judge] ex05_5_m_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:37:38 [INFO] [judge] ex08_8_a_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:37:47 [INFO] [judge] ex02_2_a_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:37:56 [INFO] [judge] ex08_8_m_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:38:05 [INFO] [judge] ex08_8_m_3: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:38:15 [INFO] [judge] ex03_3_a_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:38:26 [INFO] [judge] ex01_1_m_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:38:37 [INFO] [judge] ex03_3_b_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:38:47 [INFO] [judge] ex06_6_m_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:38:57 [INFO] [judge] ex08_8_a_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:39:08 [INFO] [judge] ex05_5_b_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:39:17 [INFO] [judge] ex02_2_b_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:39:28 [INFO] [judge] ex10_10_m_3: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:39:39 [INFO] [judge] ex01_1_a_1: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:39:49 [INFO] [judge] ex08_8_b_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:39:59 [INFO] [judge] ex10_10_m_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:40:09 [INFO] [judge] ex01_1_b_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:40:22 [INFO] [judge] ex08_8_b_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:40:31 [INFO] [judge] ex05_5_b_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:40:40 [INFO] [judge] ex03_3_a_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:40:50 [INFO] [judge] ex06_6_b_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:41:02 [INFO] [judge] ex02_2_a_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:41:14 [INFO] [judge] ex03_3_a_1: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:41:23 [INFO] [judge] ex07_7_a_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:41:31 [INFO] [judge] ex02_2_a_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:41:41 [INFO] [judge] ex02_2_m_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:41:52 [INFO] [judge] ex07_7_a_7: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:42:02 [INFO] [judge] ex03_3_m_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:42:15 [INFO] [judge] ex06_6_m_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:42:26 [INFO] [judge] ex10_10_b_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:42:37 [INFO] [judge] ex10_10_a_1: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:42:48 [INFO] [judge] ex10_10_b_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:42:59 [INFO] [judge] ex04_4_b_3: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:43:10 [INFO] [judge] ex08_8_b_3: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:43:22 [INFO] [judge] ex04_4_a_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:43:34 [INFO] [judge] ex05_5_a_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': None}
+2026-09-21 14:43:45 [INFO] [judge] ex03_3_b_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:43:54 [INFO] [judge] ex10_10_b_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:44:05 [INFO] [judge] ex10_10_b_5: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:44:16 [INFO] [judge] ex05_5_b_1: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:44:26 [INFO] [judge] ex10_10_a_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': None}
+2026-09-21 14:44:37 [INFO] [judge] ex07_7_b_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:44:46 [INFO] [judge] ex04_4_m_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:44:57 [INFO] [judge] ex01_1_m_2: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:45:08 [INFO] [judge] ex07_7_a_6: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:45:18 [INFO] [judge] ex09_9_b_1: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:45:27 [INFO] [judge] ex04_4_b_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:45:37 [INFO] [judge] ex03_3_m_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:45:46 [INFO] [judge] ex06_6_b_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:45:58 [INFO] [judge] ex05_5_a_6: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:46:08 [INFO] [judge] ex03_3_b_5: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:46:18 [INFO] [judge] ex04_4_b_2: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:46:28 [INFO] [judge] ex01_1_m_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:46:39 [INFO] [judge] ex03_3_a_4: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:46:49 [INFO] [judge] ex05_5_m_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:46:57 [INFO] [judge] ex08_8_b_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:47:08 [INFO] [judge] ex06_6_a_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:47:17 [INFO] [judge] ex06_6_m_1: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:47:27 [INFO] [judge] ex09_9_a_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:47:35 [INFO] [judge] ex10_10_b_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:47:47 [INFO] [judge] ex06_6_a_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:47:59 [INFO] [judge] ex01_1_m_5: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:48:11 [INFO] [judge] ex01_1_a_4: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:48:23 [INFO] [judge] ex04_4_a_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:48:33 [INFO] [judge] ex09_9_m_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:48:44 [INFO] [judge] ex01_1_b_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:48:51 [INFO] [judge] ex02_2_b_4: {'sq_ablation': True, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:49:02 [INFO] [judge] ex03_3_m_4: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:49:13 [INFO] [judge] ex05_5_a_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:49:24 [INFO] [judge] ex09_9_a_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:49:34 [INFO] [judge] ex01_1_m_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:49:46 [INFO] [judge] ex09_9_a_2: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:49:58 [INFO] [judge] ex07_7_m_3: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:50:07 [INFO] [judge] ex01_1_b_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:50:17 [INFO] [judge] ex08_8_m_6: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:50:27 [INFO] [judge] ex05_5_b_2: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:50:38 [INFO] [judge] ex08_8_m_1: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:50:50 [INFO] [judge] ex04_4_m_5: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:50:59 [INFO] [judge] ex07_7_a_5: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:51:10 [INFO] [judge] ex04_4_m_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:51:20 [INFO] [judge] ex10_10_a_3: {'sq_ablation': None, 'ev_ablation': False, 'cr_toxic_positivity': None, 'cr_distortion_reinforcement': False}
+2026-09-21 14:51:29 [INFO] [judge] ex04_4_a_2: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:51:39 [INFO] [judge] ex04_4_b_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:51:47 [INFO] [judge] ex06_6_a_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:51:58 [INFO] [judge] ex02_2_m_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:52:08 [INFO] [judge] ex04_4_a_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:52:18 [INFO] [judge] ex10_10_m_5: {'sq_ablation': None, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:52:29 [INFO] [judge] ex09_9_b_4: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:52:37 [INFO] [judge] ex03_3_m_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:52:48 [INFO] [judge] ex10_10_m_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:52:58 [INFO] [judge] ex01_1_b_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:53:07 [INFO] [judge] ex04_4_m_3: {'sq_ablation': True, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:53:17 [INFO] [judge] ex09_9_b_5: {'sq_ablation': True, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:53:26 [INFO] [judge] ex07_7_a_1: {'sq_ablation': True, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:53:36 [INFO] [judge] ex07_7_m_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:53:47 [INFO] [judge] ex08_8_m_2: {'sq_ablation': False, 'ev_ablation': None, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:53:56 [INFO] [judge] ex06_6_m_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:54:05 [INFO] [judge] ex05_5_a_3: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:54:15 [INFO] [judge] ex08_8_a_1: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': False}
+2026-09-21 14:54:24 [INFO] [judge] ex10_10_a_5: {'sq_ablation': False, 'ev_ablation': False, 'cr_toxic_positivity': False, 'cr_distortion_reinforcement': None}
+2026-09-21 14:54:24 [INFO] Wrote 150 judged rows to results/ex4-baseline-errorrate/baseline_judged_rows.csv
+2026-09-21 14:54:24 [INFO] Wrote summary to results/ex4-baseline-errorrate/skill_error_rates.md
+2026-09-21 14:54:24 [INFO] SKILL_WEIGHTS='{"SQ": 1.041, "EV": 1.011, "CR": 1.0}'

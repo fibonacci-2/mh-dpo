@@ -1,0 +1,87 @@
+qid,a_model,b_model,raw_judgment,winner
+q0000,cbtdp,dpo,A,cbtdp
+q0001,dpo,cbtdp,A,dpo
+q0002,dpo,cbtdp,A,dpo
+q0003,dpo,cbtdp,"A
+
+(أختار الاستج",dpo
+q0004,cbtdp,dpo,A,cbtdp
+q0005,cbtdp,dpo,A,cbtdp
+q0006,cbtdp,dpo,A,cbtdp
+q0007,dpo,cbtdp,"A
+
+الاستجابة A هي",dpo
+q0008,dpo,cbtdp,"A
+
+الاستجابة A هي",dpo
+q0009,dpo,cbtdp,A,dpo
+q0010,dpo,cbtdp,A,dpo
+q0011,cbtdp,dpo,"A
+
+الاستجابة A هي",cbtdp
+q0012,dpo,cbtdp,"A
+
+(أفضل استجابة",dpo
+q0013,dpo,cbtdp,"A
+
+(أختار الاستج",dpo
+q0014,cbtdp,dpo,"A
+
+أنا أختار الاست",cbtdp
+q0015,cbtdp,dpo,A,cbtdp
+q0016,dpo,cbtdp,A,dpo
+q0017,cbtdp,dpo,A,cbtdp
+q0018,cbtdp,dpo,"A
+
+الاستجابة A هي",cbtdp
+q0019,dpo,cbtdp,"A
+
+الاستجابة A هي",dpo
+q0020,cbtdp,dpo,A,cbtdp
+q0021,cbtdp,dpo,A,cbtdp
+q0022,dpo,cbtdp,A,dpo
+q0023,dpo,cbtdp,B,cbtdp
+q0024,cbtdp,dpo,A,cbtdp
+q0025,dpo,cbtdp,A,dpo
+q0026,dpo,cbtdp,A,dpo
+q0027,dpo,cbtdp,"A
+
+الاستجابة A هي",dpo
+q0028,cbtdp,dpo,"A
+
+الاستجابة A هي",cbtdp
+q0029,cbtdp,dpo,B,dpo
+q0030,cbtdp,dpo,"A
+
+(أفضل استجابة",cbtdp
+q0031,cbtdp,dpo,A,cbtdp
+q0032,cbtdp,dpo,A,cbtdp
+q0033,cbtdp,dpo,"A
+
+(أفضل استجابة",cbtdp
+q0034,dpo,cbtdp,A,dpo
+q0035,cbtdp,dpo,"A
+
+الاستجابة A هي",cbtdp
+q0036,cbtdp,dpo,A,cbtdp
+q0037,cbtdp,dpo,B,dpo
+q0038,cbtdp,dpo,"A
+
+(أفضل استجابة",cbtdp
+q0039,cbtdp,dpo,B,dpo
+q0040,cbtdp,dpo,B,dpo
+q0041,dpo,cbtdp,B,cbtdp
+q0042,dpo,cbtdp,B,cbtdp
+q0043,dpo,cbtdp,"A
+
+(أختار الاستج",dpo
+q0044,dpo,cbtdp,"A
+
+(أختار الاستج",dpo
+q0045,dpo,cbtdp,A,dpo
+q0046,dpo,cbtdp,لم كيفية التعامل مع الضغ,
+q0047,dpo,cbtdp,A,dpo
+q0048,cbtdp,dpo,"A
+
+الاستجابة A هي",cbtdp
+q0049,dpo,cbtdp,A,dpo

@@ -8,6 +8,10 @@ Run once per model:
         --questions data/sampled_questions.csv --out results/gen_modpo.csv
     python src/generate.py --model cbtdp --adapter-path models/cbtdp-dpo-llama3.1-8b-lora \\
         --questions data/sampled_questions.csv --out results/gen_cbtdp.csv
+
+Note: cbtdp is loaded on top of the "dpo" checkpoint (it's continued-trained
+from there, see src/train_cbtdp_dpo.py), while modpo is loaded on top of
+"base" -- see ADAPTER_BASE below.
 """
 import argparse
 import time
@@ -20,7 +24,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from logging_utils import default_log_path, setup_logging
 
 MODEL_PATHS = {
-    "dpo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B-Reward",
+    # NOT the "-Reward" repo: that's a reward/classification checkpoint
+    # (score.weight head, no lm_head) -- loading it via AutoModelForCausalLM
+    # silently random-inits the lm_head, producing fluent-looking garbage
+    # instead of an error. This is the actual DPO generation model.
+    "dpo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B",
     # Same weights as meta-llama/Llama-3.1-8B-Instruct (the DPO model's base,
     # and the base both MODPO and CBT-DP-DPO are LoRA-tuned from -- see
     # src/train_modpo.py, src/train_cbtdp_dpo.py), mirrored without the
@@ -28,8 +36,14 @@ MODEL_PATHS = {
     "base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
 }
 
-# LoRA-adapter models: same base checkpoint as "base", adapter loaded on top.
-ADAPTER_MODELS = ("modpo", "cbtdp")
+# LoRA-adapter models: which MODEL_PATHS checkpoint each adapter was trained
+# from, and must be loaded on top of at inference time. modpo trains from the
+# untouched base (see src/train_modpo.py); cbtdp (ex4) continues training
+# from the DPO checkpoint itself (see src/train_cbtdp_dpo.py) -- loading a
+# cbtdp adapter on top of "base" instead would apply a LoRA delta computed
+# relative to dpo's weights onto a different set of weights, silently
+# producing an incoherent model instead of an error.
+ADAPTER_BASE = {"modpo": "base", "cbtdp": "dpo"}
 
 SYSTEM_PROMPT = (
     "أنت معالج نفسي متخصص في العلاج السلوكي المعرفي (CBT). "
@@ -57,7 +71,7 @@ def build_prompts(tokenizer, questions):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=list(MODEL_PATHS.keys()) + list(ADAPTER_MODELS), required=True)
+    parser.add_argument("--model", choices=list(MODEL_PATHS.keys()) + list(ADAPTER_BASE.keys()), required=True)
     parser.add_argument(
         "--adapter-path",
         default=None,
@@ -73,15 +87,15 @@ def main():
     )
     args = parser.parse_args()
 
-    is_adapter_model = args.model in ADAPTER_MODELS
+    is_adapter_model = args.model in ADAPTER_BASE
     if is_adapter_model and not args.adapter_path:
         parser.error(f"--adapter-path is required when --model {args.model}")
 
     logger = setup_logging(args.log_file or default_log_path(args.out))
 
-    # modpo/cbtdp are LoRA adapters on top of the same base checkpoint as
-    # "base", not their own hub id.
-    model_path = MODEL_PATHS["base"] if is_adapter_model else MODEL_PATHS[args.model]
+    # modpo/cbtdp are LoRA adapters loaded on top of whichever checkpoint they
+    # were trained from (see ADAPTER_BASE), not their own hub id.
+    model_path = MODEL_PATHS[ADAPTER_BASE[args.model]] if is_adapter_model else MODEL_PATHS[args.model]
     df = pd.read_csv(args.questions)
 
     tokenizer_path = args.adapter_path if is_adapter_model else model_path

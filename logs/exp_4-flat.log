@@ -1,0 +1,39 @@
+2026-09-20 21:40:35 [INFO] Logging to logs/exp_4-flat.log
+2026-09-20 21:40:35 [INFO] Skill weights w_k: {'SQ': 1.0, 'EV': 1.0, 'CR': 1.0}
+2026-09-20 21:40:35 [INFO] Margin formula: Delta_DP(m) = 0.2 + 0.2 * S(m)
+2026-09-20 21:40:35 [INFO] Loaded 624 rows from results/ex3-negatives/dpo_negatives_cbtbench_verified.csv
+2026-09-20 21:40:35 [INFO] Kept 557/624 rows with judge_valid == True
+2026-09-20 21:40:35 [INFO] Wrote 557 CBT-DP-DPO training rows to data/cbtdp_dpo_train-flat.csv
+2026-09-20 21:40:35 [INFO] Rows per skill:
+skill
+CR    248
+EV    156
+SQ    153
+Name: count, dtype: int64
+2026-09-20 21:40:35 [INFO] Rows per failure_mode (margin):
+                          first  count
+failure_mode                          
+Cold_Logic                  0.2    156
+Direct_Advice               0.2    153
+Distortion_Reinforcement    0.6    122
+Toxic_Positivity            0.4    126
+2026-09-20 21:41:21 [INFO] Logging to logs/exp_4-flat.log
+2026-09-20 21:41:21 [INFO] Loading training data from data/cbtdp_dpo_train-flat.csv
+2026-09-20 21:41:21 [INFO] 557 preference pairs loaded
+2026-09-20 21:41:21 [INFO] margin range: [0.20, 0.60], weight range: [1.00, 1.00]
+2026-09-20 21:41:21 [INFO] Loading base model: NousResearch/Meta-Llama-3.1-8B-Instruct
+2026-09-20 21:41:21 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 21:41:21 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json?%2FNousResearch%2FMeta-Llama-3.1-8B-Instruct%2Fresolve%2Fmain%2Fconfig.json=&etag=%220bb6fd75b3ad2fe988565929f329945262c2814e%22 "HTTP/1.1 200 OK"
+2026-09-20 21:41:21 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 21:41:21 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-20 21:41:21 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/tokenizer_config.json?%2FNousResearch%2FMeta-Llama-3.1-8B-Instruct%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22421cda369d1e01e742b01d82e3a39c7cc82a8586%22 "HTTP/1.1 200 OK"
+2026-09-20 21:41:21 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-20 21:41:21 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-20 21:41:23 [INFO] HTTP Request: GET https://huggingface.co/api/models/NousResearch/Meta-Llama-3.1-8B-Instruct "HTTP/1.1 200 OK"
+2026-09-20 21:41:23 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 21:41:23 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json?%2FNousResearch%2FMeta-Llama-3.1-8B-Instruct%2Fresolve%2Fmain%2Fconfig.json=&etag=%220bb6fd75b3ad2fe988565929f329945262c2814e%22 "HTTP/1.1 200 OK"
+2026-09-20 21:41:23 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 21:41:23 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/config.json?%2FNousResearch%2FMeta-Llama-3.1-8B-Instruct%2Fresolve%2Fmain%2Fconfig.json=&etag=%220bb6fd75b3ad2fe988565929f329945262c2814e%22 "HTTP/1.1 200 OK"
+2026-09-20 21:41:28 [INFO] HTTP Request: HEAD https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 21:41:28 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/NousResearch/Meta-Llama-3.1-8B-Instruct/d10aef7999a2b5ba950ab3974312feeedbfe0b77/generation_config.json?%2FNousResearch%2FMeta-Llama-3.1-8B-Instruct%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22cc7276afd599de091142c6ed3005faf8a74aa257%22 "HTTP/1.1 200 OK"
+2026-09-20 21:41:37 [WARNING] [RANK 0] Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.

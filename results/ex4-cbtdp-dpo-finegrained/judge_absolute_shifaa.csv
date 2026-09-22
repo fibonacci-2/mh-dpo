@@ -12,15 +12,15 @@ q0000,dpo,"```json
 ```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
 q0001,dpo,"```json
 {
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
   ""clarity"": 4,
   ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
 }
-```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
 q0002,dpo,"```json
 {
   ""empathy"": 5,
@@ -38,56 +38,34 @@ q0003,dpo,"```json
   ""personalization"": 5,
   ""self_exploration"": 5,
   ""clarity"": 4,
-  ""autonomy"": 4,
+  ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
 q0004,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
 q0005,dpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
-q0006,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
-  ""self_exploration"": 4,
-  ""clarity"": 5,
-  ""autonomy"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,4.0,5.0,5.0,5.0,5.0
-q0007,dpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,4.0,4.0,4.0
-q0008,dpo,"```json
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0006,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
@@ -98,50 +76,72 @@ q0008,dpo,"```json
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0009,dpo,"```json
+q0007,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,3.0,2.0,4.0,4.0,4.0,3.0
+q0008,dpo,"```json
 {
   ""empathy"": 4,
   ""personalization"": 4,
   ""self_exploration"": 4,
+  ""clarity"": 3,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,3.0,4.0,4.0,4.0
+q0009,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
+q0010,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
   ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 4,
   ""stage_sensitivity"": 4
 }
-```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
-q0010,dpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,4.0,4.0,4.0
+```",4.0,3.0,2.0,4.0,4.0,4.0,4.0
 q0011,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
+  ""clarity"": 5,
+  ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0012,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
+  ""clarity"": 5,
+  ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0013,dpo,"```json
 {
   ""empathy"": 5,
@@ -155,15 +155,15 @@ q0013,dpo,"```json
 ```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
 q0014,dpo,"```json
 {
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 4,
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
   ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
 }
-```",4.0,4.0,4.0,5.0,4.0,4.0,4.0
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0015,dpo,"```json
 {
   ""empathy"": 5,
@@ -191,23 +191,23 @@ q0017,dpo,"```json
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
-q0018,dpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
   ""clarity"": 5,
   ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0018,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
 q0019,dpo,"```json
 {
   ""empathy"": 5,
@@ -222,17 +222,6 @@ q0019,dpo,"```json
 q0020,dpo,"```json
 {
   ""empathy"": 5,
-  ""personalization"": 4,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",5.0,4.0,5.0,4.0,4.0,5.0,4.0
-q0021,dpo,"```json
-{
-  ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
   ""clarity"": 5,
@@ -241,6 +230,17 @@ q0021,dpo,"```json
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0021,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
 q0022,dpo,"```json
 {
   ""empathy"": 5,
@@ -254,27 +254,16 @@ q0022,dpo,"```json
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0023,dpo,"```json
 {
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
-q0024,dpo,"```json
-{
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
+  ""clarity"": 5,
+  ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
-q0025,dpo,"```json
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0024,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
@@ -285,6 +274,17 @@ q0025,dpo,"```json
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0025,dpo,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
 q0026,dpo,"```json
 {
   ""empathy"": 5,
@@ -312,23 +312,23 @@ q0028,dpo,"```json
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0029,dpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
   ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0029,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0030,dpo,"```json
 {
   ""empathy"": 4,
@@ -343,14 +343,14 @@ q0030,dpo,"```json
 q0031,dpo,"```json
 {
   ""empathy"": 5,
-  ""personalization"": 4,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
 }
-```",5.0,4.0,4.0,4.0,4.0,4.0,4.0
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0032,dpo,"```json
 {
   ""empathy"": 5,
@@ -367,12 +367,12 @@ q0033,dpo,"```json
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 4,
+  ""clarity"": 5,
   ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0034,dpo,"```json
 {
   ""empathy"": 5,
@@ -389,12 +389,12 @@ q0035,dpo,"```json
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
-  ""clarity"": 4,
+  ""clarity"": 5,
   ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0036,dpo,"```json
 {
   ""empathy"": 5,
@@ -408,26 +408,26 @@ q0036,dpo,"```json
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0037,dpo,"```json
 {
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0038,dpo,"```json
-{
   ""empathy"": 4,
-  ""personalization"": 4,
+  ""personalization"": 3,
   ""self_exploration"": 4,
   ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 4,
   ""stage_sensitivity"": 4
 }
-```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
+q0038,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
 q0039,dpo,"```json
 {
   ""empathy"": 5,
@@ -444,23 +444,23 @@ q0040,dpo,"```json
   ""empathy"": 4,
   ""personalization"": 4,
   ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
-q0041,dpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
   ""clarity"": 3,
   ""autonomy"": 4,
   ""harm_avoidance"": 4,
   ""stage_sensitivity"": 4
 }
-```",4.0,4.0,3.0,3.0,4.0,4.0,4.0
+```",4.0,4.0,4.0,3.0,4.0,4.0,4.0
+q0041,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
 q0042,dpo,"```json
 {
   ""empathy"": 4,
@@ -486,42 +486,15 @@ q0043,dpo,"```json
 q0044,dpo,"```json
 {
   ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
   ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
+  ""stage_sensitivity"": 3
 }
-```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+```",4.0,3.0,2.0,4.0,4.0,4.0,3.0
 q0045,dpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 4,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,4.0,5.0,5.0,5.0,5.0
-q0046,dpo,"ليل الأفكار السلبية والتصورات التي تؤدي إلى مشاعر سلبية وتصرفات سلبية.  
-الهدف من العلاج السلوكي المعرفي هو مساعدتك على تحديد وتغيير الأفكار السلبية، والتصورات، والتصرفات التي تؤدي إلى مشاعر سلبية، وبالتالي تحسين حالتك النفسية.
-
-الآن، سوف نتعلم كيفية التعامل مع الأعراض، وبالتالي كيفية تداركها.  
-سوف نتعلم كيفية التعامل مع الأعر",,,,,,,
-q0047,dpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,4.0,4.0,4.0
-q0048,dpo,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
@@ -532,40 +505,13 @@ q0048,dpo,"```json
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0049,dpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,5.0,4.0,4.0,4.0,4.0
-q0000,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
-q0001,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
-}
-```",4.0,3.0,2.0,4.0,4.0,4.0,3.0
-q0002,modpo,"```json
+q0046,dpo,"العلاج السلوكي المعرفي؟
+2- هل يمكنني تحسين هذه الخطوات؟
+3- هل يمكنني تعديل هذه الخطوات؟
+4- هل هذه الخطوات تتوافق مع مبدأي العلاج السلوكي المعرفي؟
+5- هل يمكنني تحسين هذه الخطوات وتعديلها لتتوافق مع مبدأي العلاج السلوكي المعرفي؟
+6- هل يمكنني تحسين هذه الخطوات وتعديلها لتتوافق مع مبدأي العلاج السلوكي المعرفي، وتعزيز نفسي وقضاء وقت",,,,,,,
+q0047,dpo,"```json
 {
   ""empathy"": 4,
   ""personalization"": 4,
@@ -576,51 +522,73 @@ q0002,modpo,"```json
   ""stage_sensitivity"": 4
 }
 ```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
-q0003,modpo,"```json
+q0048,dpo,"```json
 {
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 3,
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 3
+  ""stage_sensitivity"": 5
 }
-```",4.0,3.0,2.0,3.0,4.0,5.0,3.0
-q0004,modpo,"```json
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0049,dpo,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0000,cbtdp,"```json
 {
   ""empathy"": 4,
-  ""personalization"": 3,
+  ""personalization"": 4,
   ""self_exploration"": 4,
   ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 4,
   ""stage_sensitivity"": 4
 }
-```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
-q0005,modpo,"```json
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0001,cbtdp,"```json
 {
   ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
   ""clarity"": 4,
   ""autonomy"": 4,
   ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
+  ""stage_sensitivity"": 4
 }
-```",4.0,3.0,2.0,4.0,4.0,4.0,3.0
-q0006,modpo,"```json
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0002,cbtdp,"```json
 {
-  ""empathy"": 3,
-  ""personalization"": 2,
-  ""self_exploration"": 1,
-  ""clarity"": 4,
-  ""autonomy"": 3,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
 }
-```",3.0,2.0,1.0,4.0,3.0,4.0,3.0
-q0007,modpo,"```json
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0003,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0004,cbtdp,"```json
 {
   ""empathy"": 4,
   ""personalization"": 3,
@@ -631,122 +599,18 @@ q0007,modpo,"```json
   ""stage_sensitivity"": 3
 }
 ```",4.0,3.0,2.0,4.0,4.0,5.0,3.0
-q0008,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,2.0,5.0,4.0,5.0,4.0
-q0009,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
-q0010,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,2.0,5.0,4.0,4.0,4.0
-q0011,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0012,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,3.0,5.0,4.0,5.0,4.0
-q0013,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0014,modpo,"```json
+q0005,cbtdp,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
   ""self_exploration"": 5,
   ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
-q0015,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```
-
-**شرح النتيجة:**
-
-- **empathy:** 5: يظهر المعالج تعاطفاً حقيقياً مع مشاعر المستفيد، حيث يفهم قلق المستفيد ويعبر عن ذلك بوضوح.
-- **",5.0,5.0,5.0,4.0,4.0,4.0,4.0
-q0016,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
   ""autonomy"": 5,
   ""harm_avoidance"": 5,
   ""stage_sensitivity"": 5
 }
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0017,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0018,modpo,"```json
+```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
+q0006,cbtdp,"```json
 {
   ""empathy"": 4,
   ""personalization"": 4,
@@ -757,7 +621,29 @@ q0018,modpo,"```json
   ""stage_sensitivity"": 4
 }
 ```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
-q0019,modpo,"```json
+q0007,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 5,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,5.0,4.0,4.0,4.0
+q0008,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,4.0
+q0009,cbtdp,"```json
 {
   ""empathy"": 4,
   ""personalization"": 4,
@@ -768,260 +654,7 @@ q0019,modpo,"```json
   ""stage_sensitivity"": 4
 }
 ```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
-q0020,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
-q0021,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,2.0,4.0,4.0,4.0,4.0
-q0022,modpo,"```json
-{
-  ""empathy"": 3,
-  ""personalization"": 2,
-  ""self_exploration"": 1,
-  ""clarity"": 4,
-  ""autonomy"": 3,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
-}
-```",3.0,2.0,1.0,4.0,3.0,4.0,3.0
-q0023,modpo,"```json
-{
-  ""empathy"": 3,
-  ""personalization"": 2,
-  ""self_exploration"": 1,
-  ""clarity"": 2,
-  ""autonomy"": 3,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
-}
-```",3.0,2.0,1.0,2.0,3.0,4.0,3.0
-q0024,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,4.0,5.0,4.0
-q0025,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,2.0,5.0,4.0,4.0,4.0
-q0026,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
-}
-```",4.0,3.0,2.0,4.0,4.0,4.0,3.0
-q0027,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 4,
-  ""clarity"": 2,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,4.0,2.0,4.0,5.0,4.0
-q0028,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 3,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,2.0,3.0,4.0,5.0,4.0
-q0029,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
-q0030,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,5.0,5.0,4.0
-q0031,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
-q0032,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,5.0,4.0,4.0,4.0,4.0
-q0033,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,4.0,5.0,4.0
-q0034,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
-q0035,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
-q0036,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 4,
-  ""clarity"": 3,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",5.0,5.0,4.0,3.0,4.0,5.0,4.0
-q0037,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,3.0,2.0,5.0,4.0,5.0,4.0
-q0038,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0039,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 4,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
-q0040,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 4,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
-q0041,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 3,
-  ""self_exploration"": 2,
-  ""clarity"": 3,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 4,
-  ""stage_sensitivity"": 3
-}
-```",4.0,3.0,2.0,3.0,4.0,4.0,3.0
-q0042,modpo,"```json
-{
-  ""empathy"": 4,
-  ""personalization"": 4,
-  ""self_exploration"": 3,
-  ""clarity"": 5,
-  ""autonomy"": 4,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 4
-}
-```",4.0,4.0,3.0,5.0,4.0,5.0,4.0
-q0043,modpo,"```json
+q0010,cbtdp,"```json
 {
   ""empathy"": 5,
   ""personalization"": 5,
@@ -1032,7 +665,370 @@ q0043,modpo,"```json
   ""stage_sensitivity"": 5
 }
 ```",5.0,5.0,4.0,5.0,5.0,5.0,5.0
-q0044,modpo,"```json
+q0011,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
+q0012,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0013,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 3,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,3.0,4.0,4.0,4.0
+q0014,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0015,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0016,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0017,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0018,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0019,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0020,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,4.0
+q0021,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0022,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",5.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0023,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0024,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
+q0025,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 5,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,5.0,4.0,4.0,4.0
+q0026,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0027,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0028,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0029,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0030,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
+q0031,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0032,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0033,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0034,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0035,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0036,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0037,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,5.0,5.0,5.0,4.0
+q0038,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0039,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
+q0040,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 4
+}
+```",5.0,5.0,4.0,4.0,4.0,5.0,4.0
+q0041,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 3,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,3.0,4.0,4.0,4.0,4.0
+q0042,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 4,
+  ""clarity"": 5,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,4.0,5.0,5.0,5.0,5.0
+q0043,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 4,
+  ""self_exploration"": 4,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 4
+}
+```",4.0,4.0,4.0,4.0,4.0,4.0,4.0
+q0044,cbtdp,"```json
 {
   ""empathy"": 4,
   ""personalization"": 3,
@@ -1043,43 +1039,7 @@ q0044,modpo,"```json
   ""stage_sensitivity"": 4
 }
 ```",4.0,3.0,4.0,4.0,4.0,4.0,4.0
-q0045,modpo,"```json
-{
-  ""empathy"": 1,
-  ""personalization"": 1,
-  ""self_exploration"": 1,
-  ""clarity"": 1,
-  ""autonomy"": 1,
-  ""harm_avoidance"": 1,
-  ""stage_sensitivity"": 1
-}
-```
-
-**ملاحظة:** هذه النتيجة منخفضة لأن الاستجابة لم تكن مناسبة تماماً لاحتياجات المستفيد. لم يعالج المعالج المشكلة المذكورة (الاستحالة في الحصول على الدواء)",1.0,1.0,1.0,1.0,1.0,1.0,1.0
-q0046,modpo,من الاكتئاب، وأتمنى أن أكون قادرا على التغلب على القلق العام، وأتمنى أن أكون قادرا على ممارسة النشاطات، وأتمنى أن أكون قادرا على تحمل الضغوطات، وأتمنى أن أكون قادرا على التفاعل مع الآخرين، وأتمنى أن أكون قادرا على الاسترخاء، وأتمنى أن أكون قادرا على التركيز، وأتمنى أن أكون قادرا على الحفظ، وأتمنى أن أكون قادر,,,,,,,
-q0047,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0048,modpo,"```json
-{
-  ""empathy"": 5,
-  ""personalization"": 5,
-  ""self_exploration"": 5,
-  ""clarity"": 5,
-  ""autonomy"": 5,
-  ""harm_avoidance"": 5,
-  ""stage_sensitivity"": 5
-}
-```",5.0,5.0,5.0,5.0,5.0,5.0,5.0
-q0049,modpo,"```json
+q0045,cbtdp,"```json
 {
   ""empathy"": 4,
   ""personalization"": 4,
@@ -1090,3 +1050,39 @@ q0049,modpo,"```json
   ""stage_sensitivity"": 4
 }
 ```",4.0,4.0,3.0,5.0,5.0,5.0,4.0
+q0046,cbtdp,"تي من مكان ما في داخلي، لكنني سأقوم بتحويله إلى شيء إيجابي"". يمكنك أن تقوم بذلك من خلال ممارسة التأمل، أو ممارسة الرياضة، أو حتى ممارسة بعض الأنشطة التي تحبها. فكر في أنك تستطيع أن تتحكم في هذا التفكير، وأنك تستطيع أن تتحكم في كيفية تعاملك معه.
+
+2- **الاكتئاب**: في حال عاودك الاكتئاب، يمكنك أن تتعامل معه من خلال",,,,,,,
+q0047,cbtdp,"```json
+{
+  ""empathy"": 4,
+  ""personalization"": 3,
+  ""self_exploration"": 2,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 4,
+  ""stage_sensitivity"": 3
+}
+```",4.0,3.0,2.0,4.0,4.0,4.0,3.0
+q0048,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 4,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,4.0,5.0,5.0
+q0049,cbtdp,"```json
+{
+  ""empathy"": 5,
+  ""personalization"": 5,
+  ""self_exploration"": 5,
+  ""clarity"": 4,
+  ""autonomy"": 5,
+  ""harm_avoidance"": 5,
+  ""stage_sensitivity"": 5
+}
+```",5.0,5.0,5.0,4.0,5.0,5.0,5.0
