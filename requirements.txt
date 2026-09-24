@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+scipy
+torch
+transformers
+accelerate
+datasets
+peft
+trl
+python-dotenv
+openai
+tabulate
+jupyter
+ipykernel

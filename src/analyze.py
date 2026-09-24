@@ -1,20 +1,21 @@
-"""RQ1/RQ2: summarize the judge outputs (any two models) into a win-rate and
-per-principle comparison."""
+"""RQ1/RQ2/ex4: summarize the judge outputs (any two models) into a win-rate
+and per-principle comparison.
+
+PRINCIPLES is imported from judge.py rather than redefined here: the two
+lists used to be independent copies that had to be kept in sync by hand
+(a real drift risk -- e.g. this file still listed the old 7 PsychoCounsel
+principles after judge.py switched to the 4 CBT-skill principles). Importing
+means a judge.py change is picked up automatically and can never silently
+mismatch the columns actually present in judge_absolute.csv.
+"""
 import argparse
 
 import pandas as pd
 
+from judge import PRINCIPLES as _PRINCIPLES_DICT
 from logging_utils import default_log_path, setup_logging
 
-PRINCIPLES = [
-    "empathy",
-    "personalization",
-    "self_exploration",
-    "clarity",
-    "autonomy",
-    "harm_avoidance",
-    "stage_sensitivity",
-]
+PRINCIPLES = list(_PRINCIPLES_DICT)  # judge.py's PRINCIPLES is {key: description}; we only need the keys
 
 
 def main():

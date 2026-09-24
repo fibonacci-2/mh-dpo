@@ -45,20 +45,36 @@ MODEL_PATHS = {
 # producing an incoherent model instead of an error.
 ADAPTER_BASE = {"modpo": "base", "cbtdp": "dpo"}
 
-SYSTEM_PROMPT = (
-    "أنت معالج نفسي متخصص في العلاج السلوكي المعرفي (CBT). "
-    "سيرسل لك المستفيد سؤالاً أو مشكلة نفسية بالعربية. قدّم استجابة علاجية "
-    "تعتمد على مبادئ العلاج السلوكي المعرفي: أظهر تعاطفاً حقيقياً مع مشاعره، "
-    "افهم أفكاره ومخاوفه، ساعده على استكشافها، واقترح خطوات أو استراتيجيات "
-    "عملية يمكنه تجربتها. اكتب بأسلوب واضح وموجز ومحترم، بالعربية الفصحى."
-)
+SYSTEM_PROMPTS = {
+    "ar": (
+        "أنت معالج نفسي متخصص في العلاج السلوكي المعرفي (CBT). "
+        "سيرسل لك المستفيد سؤالاً أو مشكلة نفسية بالعربية. قدّم استجابة علاجية "
+        "تعتمد على مبادئ العلاج السلوكي المعرفي: أظهر تعاطفاً حقيقياً مع مشاعره، "
+        "افهم أفكاره ومخاوفه، ساعده على استكشافها، واقترح خطوات أو استراتيجيات "
+        "عملية يمكنه تجربتها. اكتب بأسلوب واضح وموجز ومحترم، بالعربية الفصحى."
+    ),
+    # For ex4A (English-only isolation test, see README): same instructions,
+    # in English, so the client statement is answered in the language it was
+    # written in rather than prompting a language switch. Kept identical in
+    # substance to the Arabic prompt above -- same CBT principles, same tone
+    # -- so ex4A and ex4B differ only in language, not in what's being asked
+    # of the model. Mirrors src/measure_baseline_errorrate.py's SYSTEM_PROMPT_EN.
+    "en": (
+        "You are a psychotherapist specializing in Cognitive Behavioral Therapy (CBT). "
+        "A client will send you a statement or psychological concern. Provide a "
+        "therapeutic response grounded in CBT principles: show genuine empathy for "
+        "their feelings, understand their thoughts and concerns, help them explore "
+        "these, and suggest practical steps or strategies they could try. Write "
+        "clearly, concisely, and respectfully."
+    ),
+}
 
 
-def build_prompts(tokenizer, questions):
+def build_prompts(tokenizer, questions, lang):
     prompts = []
     for q in questions:
         messages = [
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": SYSTEM_PROMPTS[lang]},
             {"role": "user", "content": q},
         ]
         prompts.append(
@@ -79,6 +95,11 @@ def main():
         "src/train_modpo.py or src/train_cbtdp_dpo.py respectively",
     )
     parser.add_argument("--questions", default="data/sampled_questions.csv")
+    parser.add_argument(
+        "--lang", choices=list(SYSTEM_PROMPTS), default="ar",
+        help="Language of the system prompt (default: ar). Use en for ex4A "
+        "(English-only isolation test) or any other English questions file.",
+    )
     parser.add_argument("--out", required=True)
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--max-new-tokens", type=int, default=512)
@@ -115,7 +136,7 @@ def main():
     model.eval()
 
     questions = df["Question"].tolist()
-    prompts = build_prompts(tokenizer, questions)
+    prompts = build_prompts(tokenizer, questions, args.lang)
 
     responses = []
     t0 = time.time()

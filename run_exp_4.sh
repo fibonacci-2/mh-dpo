@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
-# Experiment 4 (ex4 / "Experiment A" in outline.md): train a CBT-DP-DPO LoRA
-# adapter -- DPO with a per-example clinical-risk margin Delta_DP(m) and a
-# per-example skill-deficit loss weight w_k(x), computed from the ex3
+# Experiment 4B (ex4 / "Experiment 4 B" in README.md): train a CBT-DP-DPO
+# LoRA adapter -- DPO with a per-example clinical-risk margin Delta_DP(m) and
+# a per-example skill-deficit loss weight w_k(x), computed from the ex3
 # ablated-negative dataset -- on English CBT-Bench data only, then evaluate
 # zero-shot transfer to Arabic (shifaa) against the existing single-objective
 # DPO model, the same way ex2 compares modpo against dpo.
+#
+# Judging (step 6) uses src/judge.py's 4-principle CBT rubric (one principle
+# per skill our ex3 negatives ablate: SQ, EV, CR-realistic-reframe,
+# CR-distortion-challenge) -- NOT the original 7-item generic PsychoCounsel
+# rubric -- and defaults to judge.py's own default judge model. Override with
+# JUDGE_MODEL to judge with a different model, e.g. to compare judges:
+#   JUDGE_MODEL=NousResearch/Meta-Llama-3.1-8B-Instruct
 #
 # w_k(x) defaults to 1.0 for every skill (no skill-based reweighting; see
 # src/prepare_cbtdp_data.py) -- override with SKILL_WEIGHTS to turn it on
@@ -22,13 +29,30 @@
 # results/ex4-cbtdp-dpo-finegrained/, logs/exp_4-finegrained.log, leaving the
 # flat run's outputs untouched.
 #
+# To re-judge an ALREADY-TRAINED adapter under the new 4-principle rubric (or
+# a new JUDGE_MODEL) without spending GPU time retraining it, set SKIP_TRAIN=1
+# and point CBTDP_DIR_OVERRIDE at the existing adapter directory; results
+# still land under the new RUN_TAG, so the old judge's results are kept
+# untouched for comparison, e.g. to re-judge the "finegrained" run:
+#   RUN_TAG=finegrained-4principle SKIP_TRAIN=1 \
+#     CBTDP_DIR_OVERRIDE=models/cbtdp-dpo-llama3.1-8b-lora-finegrained \
+#     JUDGE_MODEL=NousResearch/Meta-Llama-3.1-8B-Instruct ./run_exp_4.sh
+#
 # Usage: RUN_TAG=<name> ./run_exp_4.sh
 # Override other defaults via env vars, e.g.: RUN_TAG=finegrained TRAIN_EPOCHS=2 ./run_exp_4.sh
-# Everything (all 7 steps) is logged to a single file: logs/exp_4-<RUN_TAG>.log
+# Everything (all 7 steps, or 5 with SKIP_TRAIN) is logged to a single file:
+# logs/exp_4-<RUN_TAG>.log
 set -euo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
-source ~/code/venv/bin/activate
+# Only source the default venv if one isn't already active and that path
+# actually exists -- on machines where the venv lives elsewhere (or is
+# already activated before this script runs, e.g. a Slurm/interactive job
+# that starts inside its own venv), the old unconditional `source` here
+# would hard-fail the whole script under `set -e` before doing anything.
+if [ -z "${VIRTUAL_ENV:-}" ] && [ -f ~/code/venv/bin/activate ]; then
+  source ~/code/venv/bin/activate
+fi
 
 RUN_TAG="${RUN_TAG:-}"
 if [ -z "$RUN_TAG" ]; then
@@ -64,7 +88,18 @@ LORA_ALPHA="${LORA_ALPHA:-32}"
 
 NEGATIVES=results/ex3-negatives/dpo_negatives_cbtbench_verified.csv
 CBTDP_TRAIN="data/cbtdp_dpo_train-${RUN_TAG}.csv"
-CBTDP_DIR="models/cbtdp-dpo-llama3.1-8b-lora-${RUN_TAG}"
+# CBTDP_DIR_OVERRIDE lets a re-judging run point at an already-trained
+# adapter (see "SKIP_TRAIN" above) instead of the RUN_TAG-derived path.
+CBTDP_DIR="${CBTDP_DIR_OVERRIDE:-models/cbtdp-dpo-llama3.1-8b-lora-${RUN_TAG}}"
+SKIP_TRAIN="${SKIP_TRAIN:-0}"
+if [ "$SKIP_TRAIN" = "1" ] && [ ! -d "$CBTDP_DIR" ]; then
+  echo "ERROR: SKIP_TRAIN=1 but CBTDP_DIR does not exist: $CBTDP_DIR" >&2
+  echo "Set CBTDP_DIR_OVERRIDE to an already-trained adapter directory." >&2
+  exit 1
+fi
+# Judge model for step 6 (see src/judge.py --judge-model). Empty means "use
+# judge.py's own default", so existing invocations are unaffected.
+JUDGE_MODEL="${JUDGE_MODEL:-}"
 
 # Shared across RUN_TAGs on purpose: every variant is evaluated on the same
 # sampled Arabic questions, so results stay comparable to each other (and to
@@ -82,39 +117,49 @@ mkdir -p logs "$RESULTS_DIR"
 LOG_FILE="logs/exp_4-${RUN_TAG}.log"
 : > "$LOG_FILE"  # start a fresh log for this run
 
-echo "== RUN_TAG=$RUN_TAG, SKILL_WEIGHTS=$SKILL_WEIGHTS =="
-echo "== 1/7: preparing CBT-DP-DPO training data from ex3 negatives =="
-python3 src/prepare_cbtdp_data.py --negatives "$NEGATIVES" --output "$CBTDP_TRAIN" \
-  --skill-weights "$SKILL_WEIGHTS" --delta-base "$DELTA_BASE" --gamma "$GAMMA" \
-  --log-file "$LOG_FILE"
+STEPS=7
+[ "$SKIP_TRAIN" = "1" ] && STEPS=5
 
-echo "== 2/7: training CBT-DP-DPO model (LoRA) =="
-python3 src/train_cbtdp_dpo.py --train-data "$CBTDP_TRAIN" --output-dir "$CBTDP_DIR" \
-  --epochs "$TRAIN_EPOCHS" --lr "$TRAIN_LR" --beta "$TRAIN_BETA" \
-  --batch-size "$TRAIN_BATCH_SIZE" --grad-accum-steps "$GRAD_ACCUM_STEPS" \
-  --lora-r "$LORA_R" --lora-alpha "$LORA_ALPHA" --seed "$SEED" \
-  --log-file "$LOG_FILE"
+echo "== RUN_TAG=$RUN_TAG, SKILL_WEIGHTS=$SKILL_WEIGHTS, SKIP_TRAIN=$SKIP_TRAIN, JUDGE_MODEL=${JUDGE_MODEL:-<judge.py default>} =="
 
-echo "== 3/7: sampling Arabic (shifaa) questions =="
+if [ "$SKIP_TRAIN" = "1" ]; then
+  echo "== (1-2)/$STEPS: skipped -- reusing already-trained adapter at $CBTDP_DIR =="
+else
+  echo "== 1/$STEPS: preparing CBT-DP-DPO training data from ex3 negatives =="
+  python3 src/prepare_cbtdp_data.py --negatives "$NEGATIVES" --output "$CBTDP_TRAIN" \
+    --skill-weights "$SKILL_WEIGHTS" --delta-base "$DELTA_BASE" --gamma "$GAMMA" \
+    --log-file "$LOG_FILE"
+
+  echo "== 2/$STEPS: training CBT-DP-DPO model (LoRA) =="
+  python3 src/train_cbtdp_dpo.py --train-data "$CBTDP_TRAIN" --output-dir "$CBTDP_DIR" \
+    --epochs "$TRAIN_EPOCHS" --lr "$TRAIN_LR" --beta "$TRAIN_BETA" \
+    --batch-size "$TRAIN_BATCH_SIZE" --grad-accum-steps "$GRAD_ACCUM_STEPS" \
+    --lora-r "$LORA_R" --lora-alpha "$LORA_ALPHA" --seed "$SEED" \
+    --log-file "$LOG_FILE"
+fi
+
+echo "== 3/$STEPS: sampling Arabic (shifaa) questions =="
 python3 src/prepare_data.py --dataset shifaa --n "$N" --seed "$SEED" --output "$QUESTIONS" \
   --log-file "$LOG_FILE"
 
-echo "== 4/7: generating DPO-model responses =="
+echo "== 4/$STEPS: generating DPO-model responses =="
 python3 src/generate.py --model dpo --questions "$QUESTIONS" \
   --out "$GEN_DPO" --batch-size "$BATCH_SIZE" --max-new-tokens "$MAX_NEW_TOKENS" \
   --log-file "$LOG_FILE"
 
-echo "== 5/7: generating CBT-DP-DPO-model responses =="
+echo "== 5/$STEPS: generating CBT-DP-DPO-model responses =="
 python3 src/generate.py --model cbtdp --adapter-path "$CBTDP_DIR" --questions "$QUESTIONS" \
   --out "$GEN_CBTDP" --batch-size "$BATCH_SIZE" --max-new-tokens "$MAX_NEW_TOKENS" \
   --log-file "$LOG_FILE"
 
-echo "== 6/7: judging (cbtdp vs dpo) =="
+echo "== 6/$STEPS: judging (cbtdp vs dpo) with the 4-principle CBT rubric =="
+JUDGE_MODEL_ARGS=()
+[ -n "$JUDGE_MODEL" ] && JUDGE_MODEL_ARGS=(--judge-model "$JUDGE_MODEL")
 python3 src/judge.py --a-file "$GEN_DPO" --a-name dpo --b-file "$GEN_CBTDP" --b-name cbtdp \
   --pairwise-out "$JUDGE_PAIRWISE" --absolute-out "$JUDGE_ABSOLUTE" --seed "$SEED" \
-  --log-file "$LOG_FILE"
+  "${JUDGE_MODEL_ARGS[@]}" --log-file "$LOG_FILE"
 
-echo "== 7/7: summarizing =="
+echo "== 7/$STEPS: summarizing =="
 python3 src/analyze.py --pairwise "$JUDGE_PAIRWISE" --absolute "$JUDGE_ABSOLUTE" --out "$SUMMARY" \
   --log-file "$LOG_FILE"
 
